@@ -1,0 +1,6 @@
+@Putt_Em_Up_Portal_HostAddress = http://localhost:5038
+
+GET {{Putt_Em_Up_Portal_HostAddress}}/api/Match?id=1
+Accept: application/json
+
+###

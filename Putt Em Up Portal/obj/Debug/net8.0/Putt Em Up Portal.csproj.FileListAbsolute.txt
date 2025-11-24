@@ -1,0 +1,35 @@
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\appsettings.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Putt Em Up Portal.staticwebassets.endpoints.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Putt Em Up Portal.exe
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Putt Em Up Portal.deps.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Putt Em Up Portal.runtimeconfig.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Putt Em Up Portal.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Putt Em Up Portal.pdb
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.csproj.AssemblyReference.cache
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.AssemblyInfoInputs.cache
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.AssemblyInfo.cs
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.csproj.CoreCompileInputs.cache
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\scopedcss\bundle\Putt Em Up Portal.styles.css
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em .97853966.Up2Date
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\refint\Putt Em Up Portal.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.pdb
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.genruntimeconfig.cache
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\ref\Putt Em Up Portal.dll
