@@ -33,3 +33,8 @@ C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\refin
 C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.pdb
 C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.genruntimeconfig.cache
 C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\ref\Putt Em Up Portal.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.sourcelink.json
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\SharpGrip.FluentValidation.AutoValidation.Mvc.dll
+C:\Users\ilank\source\repos\Web Service\Putt Em Up Portal\bin\Debug\net8.0\SharpGrip.FluentValidation.AutoValidation.Shared.dll
