@@ -224,6 +224,259 @@
     ]
   },
   {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MessageController",
+    "Method": "Get",
+    "RelativePath": "api/messages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "toPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "sentTimestamp",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Putt_Em_Up_Portal.Models.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MessageController",
+    "Method": "Delete",
+    "RelativePath": "api/messages",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "toPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "sentTimestamp",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Putt_Em_Up_Portal.Models.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MessageController",
+    "Method": "Post",
+    "RelativePath": "api/messages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageParams",
+        "Type": "Putt_Em_Up_Portal.DTOs.MessagePostParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Putt_Em_Up_Portal.Models.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MessageController",
+    "Method": "Put",
+    "RelativePath": "api/messages",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "toPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "sentTimestamp",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "messageParams",
+        "Type": "Putt_Em_Up_Portal.DTOs.MessageEditParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Putt_Em_Up_Portal.Models.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MatchPerformanceController",
+    "Method": "Get",
+    "RelativePath": "api/performances",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "matchID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Putt_Em_Up_Portal.Models.MatchPerformance",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MatchPerformanceController",
+    "Method": "Post",
+    "RelativePath": "api/performances",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mpParams",
+        "Type": "Putt_Em_Up_Portal.DTOs.MatchPerformancePostParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Putt_Em_Up_Portal.Models.MatchPerformance",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MatchPerformanceController",
+    "Method": "Put",
+    "RelativePath": "api/performances",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "matchID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "mpParams",
+        "Type": "Putt_Em_Up_Portal.DTOs.MatchPerformanceEditParams",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Putt_Em_Up_Portal.Models.MatchPerformance",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MatchPerformanceController",
+    "Method": "Delete",
+    "RelativePath": "api/performances",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "matchID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Putt_Em_Up_Portal.Controllers.PlayerController",
     "Method": "GetProfile",
     "RelativePath": "api/profiles/{username}",

@@ -3,8 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\ilank\\source\\repos\\Web Service\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\controllers\\matchperformancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\matchperformancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\matchperformanceeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\matchperformanceeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\accounteditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\accounteditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\models\\matchperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\models\\matchperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\matchperformancepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\matchperformancepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\validators\\messagepostparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\validators\\messagepostparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\messagepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\messagepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\validators\\messageeditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\validators\\messageeditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\messageeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\messageeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\validators\\accounteditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\validators\\loginparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\validators\\loginparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\accounteditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\accounteditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\loginanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\searchmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\searchmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,10 +107,6 @@
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\testing\\localstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\dtos\\matchsearchparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\matchsearchparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,24 +115,8 @@
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\dtos\\profileeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\models\\matchperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\models\\matchperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\validators\\matchsearchparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\validators\\matchsearchparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|c:\\users\\ilank\\source\\repos\\web service\\putt em up portal\\putt em up portal.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -114,249 +146,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 324,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountEditParamsValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\AccountEditParamsValidator.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\AccountEditParamsValidator.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\AccountEditParamsValidator.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Validators\\AccountEditParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T18:40:45.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountEditParams.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\AccountEditParams.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\AccountEditParams.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\AccountEditParams.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\AccountEditParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T18:38:48.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\Account.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\Account.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\Account.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\Account.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T18:19:00.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginParamsValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\LoginParamsValidator.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\LoginParamsValidator.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\LoginParamsValidator.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Validators\\LoginParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T17:47:20.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginParams.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\LoginParams.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\LoginParams.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\LoginParams.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\LoginParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T17:46:24.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginAnswer.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\LoginAnswer.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\LoginAnswer.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\LoginAnswer.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\LoginAnswer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T16:18:03.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\PlayerController.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Controllers\\PlayerController.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAcwDgAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T11:55:43.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Profile.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\Profile.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\Profile.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\Profile.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\Profile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T13:37:55.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SearchMode.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\SearchMode.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\SearchMode.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\SearchMode.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\SearchMode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T15:37:19.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MatchController.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\MatchController.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\MatchController.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\MatchController.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Controllers\\MatchController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwAgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T10:47:05.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LocalStorage.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Testing\\LocalStorage.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Testing\\LocalStorage.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Testing\\LocalStorage.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Testing\\LocalStorage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T11:35:55.625Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Player.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Models\\Player.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Player.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Models\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MatchPerformanceEditParams.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MatchPerformanceEditParams.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\MatchPerformanceEditParams.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MatchPerformanceEditParams.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\MatchPerformanceEditParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:21:56.976Z",
+              "WhenOpened": "2025-11-27T00:00:56.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProfileEditParamsValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\ProfileEditParamsValidator.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\ProfileEditParamsValidator.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\ProfileEditParamsValidator.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Validators\\ProfileEditParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MatchPerformanceController.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\MatchPerformanceController.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\MatchPerformanceController.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\MatchPerformanceController.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Controllers\\MatchPerformanceController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA9wC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T14:22:29.779Z",
+              "WhenOpened": "2025-11-26T23:47:51.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProfileEditParams.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\ProfileEditParams.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\ProfileEditParams.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\ProfileEditParams.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\ProfileEditParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MatchController.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\MatchController.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\MatchController.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\MatchController.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Controllers\\MatchController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAmwFcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T14:19:36.338Z",
+              "WhenOpened": "2025-11-21T10:47:05.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MatchPerformance.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\MatchPerformance.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Models\\MatchPerformance.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\MatchPerformance.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Models\\MatchPerformance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\MessageController.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Controllers\\MessageController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:31:18.992Z",
+              "WhenOpened": "2025-11-26T22:37:51.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Match.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Match.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Models\\Match.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Match.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Models\\Match.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T11:12:46.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Program.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Program.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Program.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T10:30:22.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MatchSearchParams.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MatchSearchParams.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\MatchSearchParams.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MatchSearchParams.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\MatchSearchParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T13:50:20.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 3,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\WeatherForecastController.cs",
@@ -369,33 +219,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MatchSearchParamsValidator.cs",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\MatchSearchParamsValidator.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\MatchSearchParamsValidator.cs",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\MatchSearchParamsValidator.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Validators\\MatchSearchParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Controllers\\PlayerController.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Controllers\\PlayerController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwB8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T17:09:15.384Z",
+              "WhenOpened": "2025-11-26T11:55:43.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\appsettings.json",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\appsettings.json",
-              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\appsettings.json",
-              "RelativeToolTip": "Putt Em Up Portal\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-21T11:48:37.187Z",
+              "DocumentIndex": 6,
+              "Title": "AccountEditParams.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\AccountEditParams.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\AccountEditParams.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\AccountEditParams.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\AccountEditParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T18:38:48.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 7,
+              "Title": "MatchPerformance.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\MatchPerformance.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Models\\MatchPerformance.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\MatchPerformance.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Models\\MatchPerformance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T13:31:18.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MatchPerformancePostParams.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MatchPerformancePostParams.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\MatchPerformancePostParams.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MatchPerformancePostParams.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\MatchPerformancePostParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T23:54:31.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MessagePostParamsValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\MessagePostParamsValidator.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\MessagePostParamsValidator.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\MessagePostParamsValidator.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Validators\\MessagePostParamsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T23:24:46.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MessagePostParams.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MessagePostParams.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\MessagePostParams.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MessagePostParams.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\MessagePostParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T23:15:18.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Message.cs",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\Models\\Message.cs",
@@ -408,7 +310,227 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Models\\Match.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Match.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Models\\Match.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T11:12:46.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginAnswer.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\LoginAnswer.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\LoginAnswer.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\LoginAnswer.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\LoginAnswer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T16:18:03.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginParams.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\LoginParams.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\LoginParams.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\LoginParams.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\LoginParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:46:24.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginParamsValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\LoginParamsValidator.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\LoginParamsValidator.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\LoginParamsValidator.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Validators\\LoginParamsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:47:20.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Program.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Program.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Program.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T10:30:22.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\Account.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\Account.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\Account.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T18:19:00.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MessageEditParams.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MessageEditParams.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\MessageEditParams.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MessageEditParams.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\MessageEditParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T22:59:58.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MessageEditParamsValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\MessageEditParamsValidator.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\MessageEditParamsValidator.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\MessageEditParamsValidator.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Validators\\MessageEditParamsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T23:00:51.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccountEditParamsValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\AccountEditParamsValidator.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\AccountEditParamsValidator.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\AccountEditParamsValidator.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Validators\\AccountEditParamsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T18:40:45.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\Profile.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\Profile.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\Profile.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T13:37:55.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SearchMode.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\SearchMode.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\SearchMode.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\SearchMode.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\SearchMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T15:37:19.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LocalStorage.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Testing\\LocalStorage.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Testing\\LocalStorage.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Testing\\LocalStorage.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Testing\\LocalStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T11:35:55.625Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Models\\Player.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T13:21:56.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProfileEditParamsValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\ProfileEditParamsValidator.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\ProfileEditParamsValidator.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\ProfileEditParamsValidator.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Validators\\ProfileEditParamsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T14:22:29.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProfileEditParams.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\ProfileEditParams.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\ProfileEditParams.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\ProfileEditParams.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\ProfileEditParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T14:19:36.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MatchSearchParams.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MatchSearchParams.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\DTOs\\MatchSearchParams.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\DTOs\\MatchSearchParams.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\DTOs\\MatchSearchParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T13:50:20.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MatchSearchParamsValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\MatchSearchParamsValidator.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Validators\\MatchSearchParamsValidator.cs",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Validators\\MatchSearchParamsValidator.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Validators\\MatchSearchParamsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:09:15.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\appsettings.json",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\appsettings.json",
+              "ToolTip": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\appsettings.json",
+              "RelativeToolTip": "Putt Em Up Portal\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-21T11:48:37.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\appsettings.Development.json",
@@ -416,12 +538,11 @@
               "RelativeToolTip": "Putt Em Up Portal\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-21T11:48:42.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T11:48:42.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "Putt Em Up Portal.http",
               "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Putt Em Up Portal.http",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\Putt Em Up Portal.http",
@@ -429,12 +550,11 @@
               "RelativeToolTip": "Putt Em Up Portal\\Putt Em Up Portal.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-11-21T11:47:25.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T11:47:25.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\Properties\\launchSettings.json",
@@ -442,12 +562,11 @@
               "RelativeToolTip": "Putt Em Up Portal\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-21T10:31:14.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T10:31:14.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\WeatherForecast.cs",
@@ -455,8 +574,7 @@
               "RelativeToolTip": "Putt Em Up Portal\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T10:29:51.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-21T10:29:51.211Z"
             }
           ]
         }
