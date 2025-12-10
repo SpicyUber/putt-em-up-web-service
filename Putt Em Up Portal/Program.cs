@@ -2,6 +2,8 @@
 using FluentValidation;
 using FluentValidation.Resources;
 using Microsoft.AspNetCore.Identity;
+using Putt_Em_Up_Portal.Hubs;
+using Putt_Em_Up_Portal.Middleware;
 using Putt_Em_Up_Portal.Models;
 using Putt_Em_Up_Portal.Testing;
 using Putt_Em_Up_Portal.Validators;
@@ -30,8 +32,10 @@ namespace Putt_Em_Up_Portal
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.Services.AddSignalR();
             var app = builder.Build();
+
+         app.UseCors(config => { config.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod().AllowCredentials(); });
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -43,10 +47,10 @@ namespace Putt_Em_Up_Portal
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
+            app.UseMiddleware<ErrorHandlerMiddleware>();
 
             app.MapControllers();
-
+            app.MapHub<MessageHub>("/messageHub");
             InitLocalStorage();
 
             app.Run();
@@ -78,7 +82,7 @@ namespace Putt_Em_Up_Portal
             messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 2, SentTimestamp = new(2022,7,2, 10, 11, 31), Reported = false, Content = "friendlies today?" });
             messages.Add(new Message() { FromPlayerID = 2, ToPlayerID = 0, SentTimestamp = new(2022, 7, 2, 10, 11, 31), Reported = false, Content = "maybe" });
             messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 2, SentTimestamp = new(2012, 3, 3, 14, 33, 12), Reported = false, Content = "ez" });
-            messages.Add(new Message() { FromPlayerID = 2, ToPlayerID = 1, SentTimestamp = new(2012, 3, 3, 14, 34, 22), Reported = true, Content = "kys" });
+            messages.Add(new Message() { FromPlayerID = 2, ToPlayerID = 1, SentTimestamp = new(2012, 3, 3, 14, 34, 22), Reported = true, Content = "wow" });
             LocalStorage<Message>.SetSampleList(messages);
         }
     }

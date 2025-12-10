@@ -73,6 +73,37 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MessageController",
+    "Method": "GetChat",
+    "RelativePath": "api/chats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "secondPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Putt_Em_Up_Portal.Models.Message, Putt Em Up Portal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Putt_Em_Up_Portal.Controllers.PlayerController",
     "Method": "Login",
     "RelativePath": "api/login",
@@ -109,7 +140,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Match",
+        "Type": "Putt_Em_Up_Portal.DTOs.MatchPreview",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -156,7 +187,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Match",
+        "Type": "Putt_Em_Up_Portal.DTOs.MatchPreview",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -558,26 +589,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "Putt_Em_Up_Portal.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Putt_Em_Up_Portal.WeatherForecast, Putt Em Up Portal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

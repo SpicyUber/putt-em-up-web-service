@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Putt_Em_Up_Portal.DTOs;
 using Putt_Em_Up_Portal.Models;
 using Putt_Em_Up_Portal.Testing;
+using System.Dynamic;
 
 namespace Putt_Em_Up_Portal.Controllers
 {
@@ -12,11 +13,11 @@ namespace Putt_Em_Up_Portal.Controllers
     {
 
         [HttpGet(Name = "Search")]
-        public ActionResult<Match> Search([FromQuery] MatchSearchParams searchParams)
+        public ActionResult<MatchPreview> Search([FromQuery] MatchSearchParams searchParams)
         {
 
 
-            List<Match> matches = new List<Match>();
+            List<MatchPreview> matches = new List<MatchPreview>();
 
             switch (searchParams.Mode)
             {
@@ -37,19 +38,65 @@ namespace Putt_Em_Up_Portal.Controllers
             return Ok(matches);
         }
 
-        private List<Match> FindMatchesAfterDate(DateTime startDate)
+        private List<MatchPreview> FindMatchesAfterDate(DateTime startDate)
         {
-            return LocalStorage<Match>.GetSampleList().Where<Match>((Match m) => { return m.StartDate.Date >= startDate.Date; }).ToList();
+
+            List<MatchPreview> matchPreviews = new List<MatchPreview>();
+            LocalStorage<Match>.GetSampleList().ToList().ForEach((Match m) => { if (m.StartDate.Date >= startDate.Date && !m.Cancelled) { MatchPreview mp = CreateMatchPreview(m); if (mp != null) matchPreviews.Add(mp); } });
+            return matchPreviews;
+
+
+
         }
 
-        private List<Match> FindMatchesDuringDate(DateTime startDate)
+        private MatchPreview CreateMatchPreview(Match match)
         {
-            return LocalStorage<Match>.GetSampleList().Where<Match>((Match m) => { return m.StartDate.Date.Equals(startDate.Date); }).ToList();
+
+
+            List<MatchPerformance> listMP = LocalStorage<MatchPerformance>.GetSampleList().Where(mp =>
+            {
+                return match.MatchID == mp.MatchID;
+
+            }).ToList();
+
+            if (listMP.Count < 2) return null;
+
+            MatchPerformance mp1 = listMP[0];
+            MatchPerformance mp2 = listMP[1];
+
+            List<Player> playerList = LocalStorage<Player>.GetSampleList().Where((Player player) => { return (player.PlayerID == mp1.PlayerID || player.PlayerID == mp2.PlayerID); }).ToList();
+
+            if (listMP.Count < 2) return null;
+            Player p1 = playerList[0];
+            Player p2 = playerList[1];
+
+
+            return new(match, p1, p2, mp1, mp2);
+
+
+
+
+
+
+
+
+
+
+        }
+        private List<MatchPreview> FindMatchesDuringDate(DateTime startDate)
+        {
+            List<MatchPreview> matchPreviews = new List<MatchPreview>();
+            LocalStorage<Match>.GetSampleList().ToList().ForEach((Match m) => { if (m.StartDate.Date.Equals(startDate.Date) && !m.Cancelled) { MatchPreview mp = CreateMatchPreview(m); if (mp != null) matchPreviews.Add(mp); } });
+            return matchPreviews;
+
+
         }
 
-        private List<Match> FindMatchesBeforeDate(DateTime startDate)
+        private List<MatchPreview> FindMatchesBeforeDate(DateTime startDate)
         {
-            return LocalStorage<Match>.GetSampleList().Where<Match>((Match m) => { return m.StartDate.Date <= startDate.Date; }).ToList();
+            List<MatchPreview> matchPreviews = new List<MatchPreview>();
+            LocalStorage<Match>.GetSampleList().ToList().ForEach((Match m) => { if (m.StartDate.Date <= startDate.Date && !m.Cancelled) { MatchPreview mp = CreateMatchPreview(m); if (mp != null) matchPreviews.Add(mp); } });
+            return matchPreviews;
         }
 
 
@@ -57,11 +104,15 @@ namespace Putt_Em_Up_Portal.Controllers
 
         [HttpGet("{id}")]
 
-        public ActionResult<Match> Get(long id)
+        public ActionResult<MatchPreview> Get(long id)
         {
-            Match? match = LocalStorage<Match>.GetSampleList().FirstOrDefault((Match m) => { return m.MatchID == id; });
-            if (match == null) {return NotFound($"Match with id {id} not found."); }
-            return Ok(match);
+
+
+            Match? match = LocalStorage<Match>.GetSampleList().FirstOrDefault((Match m) => { return m.MatchID == id &&!m.Cancelled; });
+            if (match == null) return NotFound($"Match with id {id} not found.");
+            MatchPreview? matchPreview = CreateMatchPreview(match);
+            if (matchPreview == null) {return NotFound($"Match with id {id} not found."); }
+            return Ok(matchPreview);
         }
 
         [HttpPost()]
