@@ -35,7 +35,7 @@ namespace Putt_Em_Up_Portal
             builder.Services.AddSignalR();
             var app = builder.Build();
 
-         app.UseCors(config => { config.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod().AllowCredentials(); });
+         app.UseCors(config => { config.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod().AllowCredentials(); });
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -64,9 +64,9 @@ namespace Putt_Em_Up_Portal
             matches.Add(new Match() { MatchID = 2, Cancelled = false, StartDate = new(2022, 7, 2,12,22,33) });
             LocalStorage<Match>.SetSampleList(matches);
             List<Player> players = new();
-            players.Add(new() {PlayerID=0,Username="ila",Password="admin",MatchmakingRanking=0,AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="default.png" });
-            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "12345", MatchmakingRanking = 200, AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "default.png" });
-            players.Add(new() { PlayerID = 2, Username = "bob", Password = "123", MatchmakingRanking = -200, AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "default.png" });
+            players.Add(new() {PlayerID=0,Username="ila",Password="admin!",MatchmakingRanking=0,AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="default.png" });
+            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "123456", MatchmakingRanking = 200, AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "default.png" });
+            players.Add(new() { PlayerID = 2, Username = "bob", Password = "123abc", MatchmakingRanking = -200, AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "default.png" });
             LocalStorage<Player>.SetSampleList(players);
             List<MatchPerformance> mps = new();
             mps.Add(new() { PlayerID =0, MatchID=0, WonMatch=false, MMRDelta=-100, FinalScore=0 });

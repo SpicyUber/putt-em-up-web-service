@@ -21,6 +21,39 @@ namespace Putt_Em_Up_Portal.Controllers
             
         }
 
+        [HttpGet("profiles/search")]
+
+        public ActionResult<List<Profile>> Search([FromQuery]PlayerSearchParams playerParameters)
+        {
+            List<Profile> list = new();
+
+            IEnumerable<Player> players = LocalStorage<Player>.GetSampleList().Where<Player>((Player p) => { return (playerParameters.UsernameStartsWith == null || p.DisplayName.ToLower().StartsWith(playerParameters.UsernameStartsWith.ToLower())); });
+
+            if (playerParameters.DescendingRanking) players = players.OrderByDescending((p) => { return p.MatchmakingRanking; });
+            else players = players.OrderBy((p) => { return p.MatchmakingRanking; });
+
+            if (playerParameters.PageSize == null || playerParameters.PageNumber == null)
+            {
+
+                foreach (Player p in players)
+                    list.Add(new Profile(p));
+
+                return Ok(list);
+            }
+            
+            for (int i = 1; i < (int)playerParameters.PageNumber; i++)
+               players= players.Skip((int)playerParameters.PageSize);
+
+            players = players.Take((int)playerParameters.PageSize);
+
+            foreach (Player p in players)
+                list.Add(new Profile(p));
+
+            return Ok(list);
+
+
+        }
+
         [HttpPut("profiles/{username}")]
         public ActionResult<Profile> PutProfile(string username, [FromBody] ProfileEditParams profile)
         {
