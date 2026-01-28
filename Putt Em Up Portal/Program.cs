@@ -65,7 +65,7 @@ namespace Putt_Em_Up_Portal
             LocalStorage<Match>.SetSampleList(matches);
             List<Player> players = new();
             players.Add(new() {PlayerID=0,Username="ila",Password="admin!",MatchmakingRanking=0,AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="default.png" });
-            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "123456", MatchmakingRanking = 200, AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "default.png" });
+            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "123456", MatchmakingRanking = 200, AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "screaming.png" });
             players.Add(new() { PlayerID = 2, Username = "bob", Password = "123abc", MatchmakingRanking = -200, AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "default.png" });
             LocalStorage<Player>.SetSampleList(players);
             List<MatchPerformance> mps = new();

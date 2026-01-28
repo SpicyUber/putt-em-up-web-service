@@ -21,6 +21,8 @@ namespace Putt_Em_Up_Portal.Controllers
             
         }
 
+
+
         [HttpGet("profiles/search")]
 
         public ActionResult<List<Profile>> Search([FromQuery]PlayerSearchParams playerParameters)
@@ -54,6 +56,8 @@ namespace Putt_Em_Up_Portal.Controllers
 
         }
 
+
+
         [HttpPut("profiles/{username}")]
         public ActionResult<Profile> PutProfile(string username, [FromBody] ProfileEditParams profile)
         {
@@ -79,6 +83,7 @@ namespace Putt_Em_Up_Portal.Controllers
 
 
             return Ok(new Account(p));
+
             }
 
         [HttpPut("accounts/{id}")]

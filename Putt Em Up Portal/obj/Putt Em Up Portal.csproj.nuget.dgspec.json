@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Putt Em Up Portal.csproj": {}
+    "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Putt Em Up Portal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Putt Em Up Portal.csproj": {
+    "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Putt Em Up Portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Putt Em Up Portal.csproj",
+        "projectUniqueName": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Putt Em Up Portal.csproj",
         "projectName": "Putt Em Up Portal",
-        "projectPath": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\Putt Em Up Portal.csproj",
-        "packagesPath": "C:\\Users\\ilank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilank\\source\\repos\\Web Service\\Putt Em Up Portal\\obj\\",
+        "projectPath": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Putt Em Up Portal.csproj",
+        "packagesPath": "C:\\Users\\Aleksa\\.nuget\\packages\\",
+        "outputPath": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ilank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aleksa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

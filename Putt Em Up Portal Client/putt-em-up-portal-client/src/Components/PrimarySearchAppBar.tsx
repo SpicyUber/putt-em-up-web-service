@@ -58,7 +58,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function PrimarySearchAppBar() {
+type PrimarySearchAppBarProps = {
+  setSearchValue: (value: string) => void;
+};
+
+export default function PrimarySearchAppBar(
+  props:PrimarySearchAppBarProps) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
@@ -167,13 +172,14 @@ export default function PrimarySearchAppBar() {
           >
             PUTT EM UP
           </Typography>
-          <Search>
+          <Search >
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
+              onChange={(e)=>props.setSearchValue(e.target.value)}
             />
           </Search>
           <Box sx={{ flexGrow: 1 }} />

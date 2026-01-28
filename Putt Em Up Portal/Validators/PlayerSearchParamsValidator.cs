@@ -9,7 +9,7 @@ namespace Putt_Em_Up_Portal.Validators
         
         RuleFor(x=>x.PageSize).GreaterThanOrEqualTo(1);
         RuleFor(x=>x.PageNumber).GreaterThanOrEqualTo(1);
-            RuleFor(x => x.DescendingRanking).NotEmpty();
+            
 
 
         }
