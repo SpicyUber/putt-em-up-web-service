@@ -17,6 +17,8 @@ import MoreIcon from '@mui/icons-material/MoreVert';
 import UserContext from '../hooks/UserContext';
 import type { UserContextType } from '../hooks/UserContext';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import type { LoginAnswer } from '../types/LoginAnswer';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -69,6 +71,7 @@ export default function PrimarySearchAppBar(
     React.useState<null | HTMLElement>(null);
 
     const userContext : UserContextType = useContext(UserContext);
+    const navigate = useNavigate();
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -106,8 +109,12 @@ export default function PrimarySearchAppBar(
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      {(userContext.user.playerID<0)?<MenuItem onClick={handleMenuClose}>Login</MenuItem>:<><MenuItem onClick={()=>{ navigate(`/profiles/${userContext.user.username}`);}}>Profile</MenuItem>
+      <MenuItem onClick={()=>{const newUser: LoginAnswer = {
+    playerID: -1n,
+    token: "",
+    username: ""
+  };userContext.updateUser(newUser); navigate(`/login`);}}>Logout</MenuItem></>}
     </Menu>
   );
 
@@ -176,7 +183,7 @@ export default function PrimarySearchAppBar(
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
-            <StyledInputBase
+            <StyledInputBase onClick={()=>navigate("/leaderboard/")}
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
               onChange={(e)=>props.setSearchValue(e.target.value)}

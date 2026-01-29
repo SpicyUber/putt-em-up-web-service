@@ -1,0 +1,121 @@
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import {Badge, Box, Button, Container, Divider, Paper, Stack  } from '@mui/material';
+ import Grid from '@mui/material/Grid';
+import { Avatar, Typography } from '@mui/material';
+import type { Profile } from '../types/Profile';
+import next from "../assets/next-button.png"
+import { WrapText } from '@mui/icons-material';
+import type { Match } from '../types/Match';
+import useWindowDimensions from "../hooks/WindowDimension"
+import type { MatchPerformance } from '../types/MatchPerformance';
+ import type { MatchCardProps } from '../types/MatchCardProps';
+ 
+export default function MatchCard(props:MatchCardProps) {
+  
+const { height, width } = useWindowDimensions();
+function WonMatch(mp:MatchPerformance[],pid:BigInt){
+
+    if(mp==undefined || pid==undefined || mp.length<2)return true;
+    if(mp[0].wonMatch && mp[0].player.playerID == pid)return true;
+    if(mp[1].wonMatch && mp[1].player.playerID == pid)return true;
+    return false;
+}
+
+
+    return (
+
+    <Stack     sx={{  backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "#287dd1ff":"#FC440F"   }} direction={'row'} spacing={0}  >
+       
+    <Card  variant={'outlined'}     sx={{zIndex:4, width:(width<500)?"80px" : "120px", height:(width<500)?"80px" : "120px", paddingBottom:(width<500)?"15px" :"0px", backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "rgb(38, 117, 197)":"#f65a3b"  }}>
+<CardContent   sx={{paddingRight:(width<500)?"0px" :"10px",paddingLeft:(width<500)?"7.5px" :"15px" ,color: '#ffffff'}} >
+     
+
+<Avatar  variant='square'  sx={{ width: (width<500)?65 :90, height:(width<500)?65 :90 }} alt={props.match.matchPerformances[0].player.displayName} src={"../src/assets/profile-pictures/"+props.match.matchPerformances[0].player.avatarFilePath} />
+
+ 
+ 
+
+ 
+</CardContent>
+ 
+
+    </Card>
+
+   <Box sx={{ flex: 1, px: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}> 
+   <Box sx={{width:(width<500)?'15vw':'30vw', flex: 1, px: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+   {(width<500)?<></> : <Typography align='left'
+   variant={(width<500)?"body1":"h6"}
+  sx={{
+    color: '#edededff',
+    whiteSpace: 'nowrap',        
+    overflow: 'hidden',          
+    textOverflow: 'ellipsis',    
+    width:'30vw',  
+    paddingTop:'12px'                
+  }}
+>
+  {props.match.matchPerformances[0].player.displayName}
+</Typography>}
+ <Typography align='center'
+   variant={(width<500)?"body1":"h6"}
+  sx={{
+    color: '#edededff',
+    whiteSpace: 'wrap',        
+    overflow: 'hidden',          
+    textOverflow: 'ellipsis',    
+    width:'30vw',  
+    paddingTop:'12px'                
+  }}
+>
+    {props.match.matchPerformances[0].finalScore +' : '+ props.match.matchPerformances[1].finalScore} 
+</Typography>
+ {(width<500)?<></> :  <Typography align='right'
+   variant={(width<500)?"body1":"h6"}
+  sx={{
+    color: '#edededff',
+    whiteSpace: 'nowrap',        
+    overflow: 'hidden',          
+    textOverflow: 'ellipsis',    
+    width:'30vw',   
+     paddingTop:'12px'                 
+  }}
+>
+  {props.match.matchPerformances[1].player.displayName}
+</Typography>}
+ 
+
+  </Box>
+ {(width<500)?<></>:<Box sx={{width:'30vw', flex: 1, px: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+     <Typography align='center'
+  variant="h6"
+  sx={{
+    color: WonMatch(props.match.matchPerformances,props.pid)?'#1976D2':"#dd3d11" ,
+    whiteSpace: 'nowrap',        
+    overflow: 'hidden',          
+    textOverflow: 'ellipsis',    
+    width:'30vw',   
+     paddingTop:'12px'                 
+  }}
+>
+  {props.match.startDate}
+</Typography>
+  </Box>}
+  </Box>
+  <Divider/>   
+ <Card  variant={'outlined'}      sx={{zIndex:4, width:(width<500)?"80px" : "120px",paddingBottom:(width<500)?"15px" :"0px", height:(width<500)?"80px" : "120px", backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "rgb(38, 117, 197)":"#FC440F" }}>
+<CardContent  sx={{paddingRight:(width<500)?"0px" :"10px",paddingLeft:(width<500)?"7.5px" :"15px", color: '#ffffff'}} >
+     
+
+<Avatar  variant='square'  sx={{ width: (width<500)?65 :90, height:(width<500)?65 :90 }} alt={props.match.matchPerformances[1].player.displayName} src={"../src/assets/profile-pictures/"+props.match.matchPerformances[1].player.avatarFilePath} />
+
+ 
+ 
+
+ 
+</CardContent>
+ 
+
+    </Card>
+    </Stack>);
+}

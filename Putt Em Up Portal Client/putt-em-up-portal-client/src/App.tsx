@@ -8,6 +8,7 @@ import UserProvider from './hooks/UserProvider'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import { Leaderboard } from './Pages/Leaderboard'
 import PrimarySearchAppBar from './Components/PrimarySearchAppBar'
+import { ProfilePage } from './Pages/ProfilePage'
 
 
 
@@ -28,7 +29,8 @@ function App() {
           <Routes >
             <Route path={"/"} element = {<Navigate to="/login"></Navigate>}/>
             <Route path={"/login"} element={<Login/>}/>
-            <Route path={"/leaderboard" } element={<Leaderboard/>}></Route>
+            <Route path={"/leaderboard/" } element={<Leaderboard/>}></Route>
+            <Route path={"/profiles/:username" } element={<ProfilePage/>}></Route>
           </Routes>
       
       </UserProvider>

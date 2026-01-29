@@ -1,0 +1,2 @@
+export type AutocompleteOption = string;
+ 

@@ -22,7 +22,7 @@ const userContext : UserContextType = useContext(UserContext);
 const [username,setUsername] = useState("");
 const [password,setPassword] = useState("");
 const [error,setError] = useState("");
-
+const [isRegistering,setIsRegistering] = useState(false);
 
 
 function LoginButtonHandler(){
@@ -33,8 +33,8 @@ function LoginButtonHandler(){
 
 
  async function AttemptLogin(username:string,password:string): Promise<void> {
-    
-  const response = await fetch("https://localhost:7120/api/login", {
+    const url = isRegistering?"https://localhost:7120/api/register" :"https://localhost:7120/api/login"
+  const response = await fetch(url, {
       method: 'POST',
       body: JSON.stringify({
         username,password
@@ -88,13 +88,14 @@ return (
           objectFit: "cover",}}></Box>
     <Stack width={480} spacing={2}>
         <Typography variant="h2" component="h2">
-        Welcome.  
+        {(isRegistering)?"Register.":"Welcome."}  
             <Typography>Putt Em Up Portal</Typography>
         </Typography>
 
         <TextField onChange={handleUsernameChange} id="outlined-basic" label="Username" variant="outlined" />
         <TextField onChange={handlePasswordChange} id="outlined-basic" label="Password" variant="outlined" />
-        <Button onClick={LoginButtonHandler} variant="contained">Sign in</Button>
+        <Button onClick={LoginButtonHandler} variant="contained">{(isRegistering)?"Create account":"Sign in"}</Button>
+        <Button variant="text" onClick={()=>setIsRegistering(!isRegistering)}>{(isRegistering)?"Have account? Sign in instead!":"New here? Create an account!"}</Button>
         <Typography color="#F6AF3B" variant="subtitle1">{error}</Typography>
     </Stack>
 </Box>

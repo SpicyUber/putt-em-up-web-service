@@ -5,12 +5,14 @@ import { useEffect, useState } from "react";
 import PlayerCard from "../Components/PlayerCard";
 import {Stack,Divider} from "@mui/material";
 import type { Profile } from "../types/Profile";
+import { useParams } from "react-router-dom";
 
 
-export function Leaderboard(){
+export function Leaderboard( ){
 
     const [cardCount, setCardCount] = useState(5);
     const [pageNumber, setNumber] = useState(1);
+   
     const [searchValue, setSearchValue] = useState("");
     const [searchResults,setSearchResults] = useState<Profile[]>([]);
     const [sortDescending,setSortDescending] = useState<boolean>(true);
@@ -52,7 +54,7 @@ else return n;
     <Box sx={{ minHeight: '100vh'}}>
         {(searchResults.length>0)?
     <FormGroup>
-  <FormControlLabel control={<Switch defaultChecked color="info" onChange={toggleSorting}/>} label={sortDescending?"Descending MMR" :"Ascending MMR"}  sx={{color:"#287dd1"}}/> </FormGroup> 
+  <FormControlLabel control={<Switch defaultChecked={sortDescending} color="info" onChange={toggleSorting}/>} label={sortDescending?"Descending MMR" :"Ascending MMR"}  sx={{color:"#287dd1"}}/> </FormGroup> 
    : <>Nothing to see here.</>}
     <Stack bgcolor={'#c5d4e9ff'} sx={{ ml: -1 }} spacing={2}>
     

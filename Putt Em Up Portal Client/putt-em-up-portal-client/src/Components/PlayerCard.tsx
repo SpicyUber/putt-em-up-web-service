@@ -6,11 +6,34 @@ import { Avatar, Typography } from '@mui/material';
 import type { Profile } from '../types/Profile';
 import next from "../assets/next-button.png"
 import { WrapText } from '@mui/icons-material';
+import { useNavigate } from "react-router-dom"; 
+import { useState } from 'react';
+import type { Account } from '../types/Account';
+
+
 
 export default function PlayerCard(p:Profile) {
+  const navigate = useNavigate();
+ const [profile, setProfile] = useState<Profile>(p);
 
+async function GoToProfile(){
+      let url:string = `https://localhost:7120/api/accounts/${profile?.playerID}`;
+        
+    try {
+     
+    const response : Response =  await fetch(url)
 
+ let p:Account = await response.json() as Account;
+   let account = p;
+ navigate(`/profiles/${account.username}`);
+    } catch (error) {
 
+     console.log(error);
+     console.log(url);
+    }
+     
+  
+ }
 
 
     return (
@@ -62,7 +85,7 @@ export default function PlayerCard(p:Profile) {
   </Box>
      <Divider   orientation="vertical" flexItem /> 
       
-        <Button  sx={{zIndex:"10",paddingRight:"20px",paddingLeft:"20px", color:'#ffffff' ,bgcolor:'#287dd1ff', width:20, height:120}}> <Avatar src={next}/> </Button>
+        <Button onClick={GoToProfile}  sx={{zIndex:"10",paddingRight:"20px",paddingLeft:"20px", color:'#ffffff' ,bgcolor:'#287dd1ff', width:20, height:120}}> <Avatar src={next}/> </Button>
         
     </Stack>);
 }
