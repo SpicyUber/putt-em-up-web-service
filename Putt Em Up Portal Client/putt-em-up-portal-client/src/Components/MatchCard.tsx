@@ -58,20 +58,21 @@ function WonMatch(mp:MatchPerformance[],pid:BigInt){
   {props.match.matchPerformances[0].player.displayName}
 </Typography>}
  <Typography align='center'
-   variant={(width<500)?"body1":"h6"}
+   variant={(width<500)?"caption":"h6"}
   sx={{
     color: '#edededff',
     whiteSpace: 'wrap',        
-    overflow: 'hidden',          
+    overflow: (width<500)?'visible':'hidden',          
     textOverflow: 'ellipsis',    
     width:'30vw',  
+    paddingLeft:(width<500)?"15px":"0",
     paddingTop:'12px'                
   }}
 >
-    {props.match.matchPerformances[0].finalScore +' : '+ props.match.matchPerformances[1].finalScore} 
+    {(width<500)?(props.match.matchPerformances[0].player.displayName.slice(0,1)+":"+props.match.matchPerformances[0].finalScore +'pts. vs '+props.match.matchPerformances[1].player.displayName.slice(0,1)+":" +props.match.matchPerformances[1].finalScore+"pts."):(props.match.matchPerformances[0].finalScore +' : '+ props.match.matchPerformances[1].finalScore)} 
 </Typography>
  {(width<500)?<></> :  <Typography align='right'
-   variant={(width<500)?"body1":"h6"}
+   variant={(width<500)?"caption":"h6"}
   sx={{
     color: '#edededff',
     whiteSpace: 'nowrap',        

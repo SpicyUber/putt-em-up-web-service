@@ -17,6 +17,7 @@
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.10.1",
+    "react-signalr": "^0.2.24",
     "useismobile": "^1.1.0"
   },
   "devDependencies": {

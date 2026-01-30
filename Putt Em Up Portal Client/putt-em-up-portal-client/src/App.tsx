@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import { Leaderboard } from './Pages/Leaderboard'
 import PrimarySearchAppBar from './Components/PrimarySearchAppBar'
 import { ProfilePage } from './Pages/ProfilePage'
+import Chat from './Pages/Chat'
+import Recents from './Pages/Recents'
 
 
 
@@ -31,6 +33,8 @@ function App() {
             <Route path={"/login"} element={<Login/>}/>
             <Route path={"/leaderboard/" } element={<Leaderboard/>}></Route>
             <Route path={"/profiles/:username" } element={<ProfilePage/>}></Route>
+            <Route path={"/chats/:id" } element={<Chat/>}></Route>
+            <Route path={"/messages/recent" } element={<Recents/>}></Route>
           </Routes>
       
       </UserProvider>

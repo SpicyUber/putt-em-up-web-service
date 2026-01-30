@@ -128,6 +128,11 @@
     "Order": 0,
     "Parameters": [
       {
+        "Name": "PlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
         "Name": "StartDate",
         "Type": "System.DateTime",
         "IsRequired": false
@@ -135,6 +140,16 @@
       {
         "Name": "Mode",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],
@@ -384,6 +399,32 @@
     "ReturnTypes": [
       {
         "Type": "Putt_Em_Up_Portal.Models.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Putt_Em_Up_Portal.Controllers.MessageController",
+    "Method": "GetAllChat",
+    "RelativePath": "api/messages/recent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Putt_Em_Up_Portal.Models.Message, Putt Em Up Portal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

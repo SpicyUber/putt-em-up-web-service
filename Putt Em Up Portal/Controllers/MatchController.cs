@@ -4,6 +4,7 @@ using Putt_Em_Up_Portal.DTOs;
 using Putt_Em_Up_Portal.Models;
 using Putt_Em_Up_Portal.Testing;
 using System.Dynamic;
+using System.Linq;
 
 namespace Putt_Em_Up_Portal.Controllers
 {
@@ -32,9 +33,10 @@ namespace Putt_Em_Up_Portal.Controllers
                     matches = FindMatchesDuringDate(searchParams.StartDate);
                     break;
             }
-
+            matches = matches.Where((match) => { if (match.MatchPerformances.Length < 2) return false; return match.MatchPerformances[0].Player.PlayerID == searchParams.PlayerID || match.MatchPerformances[1].Player.PlayerID == searchParams.PlayerID; }).ToList<MatchPreview>();
             if (matches.Count <= 0) return NotFound($"Match {searchParams.Mode} {searchParams.StartDate.ToString("MM/dd/yyyy")} could not be found.");
-
+            if (searchParams.PageNumber != null && searchParams.PageSize != null)
+                matches = matches.Skip((int)(searchParams.PageNumber) * (int)(searchParams.PageSize) - (int)(searchParams.PageSize)).Take((int)(searchParams.PageSize)).ToList<MatchPreview>() ;
             return Ok(matches);
         }
 
@@ -66,10 +68,14 @@ namespace Putt_Em_Up_Portal.Controllers
 
             List<Player> playerList = LocalStorage<Player>.GetSampleList().Where((Player player) => { return (player.PlayerID == mp1.PlayerID || player.PlayerID == mp2.PlayerID); }).ToList();
 
-            if (listMP.Count < 2) return null;
-            Player p1 = playerList[0];
-            Player p2 = playerList[1];
-
+            
+            Player p1 = LocalStorage<Player>.GetSampleList().FirstOrDefault((Player player) => {
+                return (player.PlayerID == mp1.PlayerID);
+            });
+            Player p2 = LocalStorage<Player>.GetSampleList().FirstOrDefault((Player player) => {
+                return (player.PlayerID == mp2.PlayerID);
+            });
+            if (p1 == null || p2 == null) return null;
 
             return new(match, p1, p2, mp1, mp2);
 

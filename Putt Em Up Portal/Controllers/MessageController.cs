@@ -33,6 +33,17 @@ namespace Putt_Em_Up_Portal.Controllers
 
             return Ok(messages);
         }
+
+        [HttpGet]
+        [Route("messages/recent")]
+        public ActionResult<List<Message>> GetAllChat([FromQuery] long playerID)
+        {
+            List<Message> messages = LocalStorage<Message>.GetSampleList().Where<Message>((Message m) => { return (m.FromPlayerID == playerID || m.ToPlayerID == playerID )&& m.SentTimestamp.AddDays(7.0)>DateTime.Now; }).OrderByDescending((Message m1) => m1.SentTimestamp).ToList();
+            if (messages.Count == 0) { return NotFound(); }
+
+            return Ok(messages);
+        }
+
         [Route("messages")]
         [HttpDelete]
 

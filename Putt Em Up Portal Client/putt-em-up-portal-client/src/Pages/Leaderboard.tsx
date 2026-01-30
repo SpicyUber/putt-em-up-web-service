@@ -1,6 +1,6 @@
  
 import PrimarySearchAppBar from "../Components/PrimarySearchAppBar";
-import { BottomNavigation, Box, CssBaseline, FormControlLabel, FormGroup, Pagination, Switch, Toolbar } from "@mui/material";
+import { BottomNavigation, Box, CssBaseline, FormControlLabel, FormGroup, Pagination, Switch, Toolbar, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import PlayerCard from "../Components/PlayerCard";
 import {Stack,Divider} from "@mui/material";
@@ -51,6 +51,16 @@ else return n;
     <>
     <PrimarySearchAppBar setSearchValue={setSearchValue}/>
     <Toolbar></Toolbar>
+    <Typography  
+   variant={"h4"}
+  sx={{
+    color: '#DBDBDB',
+    whiteSpace: 'wrap',        
+    overflow: 'visible',          
+    textOverflow: 'clip',    
+      justifyContent:'left',
+    paddingTop:'12px'                
+  }}>{"LEADERBOARD"}</Typography>
     <Box sx={{ minHeight: '100vh'}}>
         {(searchResults.length>0)?
     <FormGroup>

@@ -135,11 +135,11 @@ export default function PrimarySearchAppBar(
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
+      <MenuItem onClick={()=>navigate("/messages/recent")}>
+        <IconButton  size="large" aria-label="show 4 new mails" color="inherit">
+         
             <MailIcon />
-          </Badge>
+          
         </IconButton>
         <p>Messages</p>
       </MenuItem>
@@ -169,7 +169,7 @@ export default function PrimarySearchAppBar(
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+             
           </IconButton>
           <Typography
             variant="h6"
@@ -191,14 +191,14 @@ export default function PrimarySearchAppBar(
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton
+            <IconButton onClick={()=>navigate("/messages/recent")}
               size="large"
               aria-label="show 4 new mails"
               color="inherit"
             >
-              <Badge badgeContent={4} color="error">
+              
                 <MailIcon />
-              </Badge>
+              
             </IconButton>
             <IconButton
               size="large"

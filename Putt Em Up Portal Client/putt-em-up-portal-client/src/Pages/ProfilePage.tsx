@@ -1,6 +1,6 @@
  
 import PrimarySearchAppBar from "../Components/PrimarySearchAppBar";
-import { Avatar, BottomNavigation, Box, Button, CssBaseline, FormControlLabel, FormGroup, Pagination, Switch, Toolbar, Typography } from "@mui/material";
+import { Avatar, Badge, BottomNavigation, Box, Button, CssBaseline, FormControlLabel, FormGroup, IconButton, Pagination, Switch, Toolbar, Typography } from "@mui/material";
 import { useContext, useEffect, useState } from "react";
  
 import {Stack,Divider} from "@mui/material";
@@ -12,6 +12,7 @@ import type { Account } from "../types/Account";
 import type { UserContextType } from "../hooks/UserContext";
 import UserContext from "../hooks/UserContext";
 import { EditProfile } from "./EditProfile";
+import MailIcon from '@mui/icons-material/Mail';
 
 export function ProfilePage(){
 
@@ -104,6 +105,7 @@ else return n;
     <>
     <PrimarySearchAppBar setSearchValue={setSearchValue}/>
     <Toolbar></Toolbar>
+    
     <Typography  
    variant={"h4"}
   sx={{
@@ -123,7 +125,7 @@ else return n;
  </Stack>
  <Typography variant="h6"  justifyContent={"left"}  align='left'>{"DESCRIPTION:"}</Typography>
  <Typography bgcolor={"rgb(35, 110, 185)"} variant="body1"  justifyContent={"left"}  align='left'>{profileDetails?.description}</Typography>
-
+ 
  </Stack>
  <Typography variant="h6"  justifyContent={"left"}  align='left'>{"//// "}</Typography>
  <Stack bgcolor={"#287dd1ff"}   color={'#efefef'} minWidth={"40vw"}sx={{ ml: -1, padding:"15px" }}   spacing={'1vw'}>
@@ -135,8 +137,14 @@ else return n;
   <Typography variant="h6"  justifyContent={"left"}  align='left'>{"MMR:"}</Typography>
  <Typography bgcolor={"rgb(35, 110, 185)"} variant="body1"  justifyContent={"left"}  align='left'>{"This player's matchmaking ranking is "+ranking+"."}</Typography>
  </Stack>
- 
- {(profileDetails?.playerID!=userContext.user.playerID || isEditing)? <></> : <Box   > <Button onClick={()=>{setIsEditing(true)}} >EDIT PROFILE</Button></Box>}
+ {(userContext.user.playerID<0 || userContext.user.playerID==profileDetails?.playerID)?<></> :<Box  marginLeft={0} >
+ <IconButton onClick={()=>navigate("/chats/"+profileDetails?.playerID)} size="large"   aria-label="send message" color="primary">
+           
+          <Typography fontWeight={500} marginRight={1}>{"MESSAGE"}</Typography> <MailIcon   /> 
+           
+        </IconButton>
+  </Box>  }    
+ {(profileDetails?.playerID!=userContext.user.playerID || isEditing)? <></> : <Box   > <Button sx={{fontSize:"16px"}} onClick={()=>{setIsEditing(true)}} >EDIT PROFILE</Button></Box>}
  {isEditing?<Stack spacing={2} >
 
 
@@ -153,7 +161,7 @@ else return n;
     overflow: 'visible',          
     textOverflow: 'clip',    
       
-    paddingTop:'12px'                
+    paddingTop:'24px'                
   }}>{"MATCH HISTORY"}</Typography> 
    : <Typography  
    variant={"h4"}
