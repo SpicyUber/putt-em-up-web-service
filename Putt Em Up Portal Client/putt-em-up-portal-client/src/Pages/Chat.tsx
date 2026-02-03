@@ -151,7 +151,7 @@ function WhoSentIt(m:Message):Profile|undefined{
   return (
     <><PrimarySearchAppBar setSearchValue={setSearchValue}></PrimarySearchAppBar>
     <Toolbar></Toolbar>
-    <Box sx={{minWidth:"25vw", height: "100%", display: "flex", flexDirection: "column" }}>
+    <Box sx={{minWidth:"25vw",maxWidth:"300px", height: "100%", display: "flex", flexDirection: "column" }}>
       <Box sx={{ flex: 1, overflowY: "auto", p: 2 }}>
         <Stack spacing={1}>
           {messages.map((m) => (<>  
@@ -161,29 +161,35 @@ function WhoSentIt(m:Message):Profile|undefined{
               sx={{ display: "flex", justifyContent: IsMine(m) ? "flex-end" : "flex-start" }}
             >
               {(IsMine(m))?<></> :(
-                <Avatar src={"../src/assets/profile-pictures/"+WhoSentIt(m)?.avatarFilePath} sx={{ mr: 2, alignSelf: "flex-start" }}>
+                <Avatar src={"data:image/png;base64, "+WhoSentIt(m)?.avatar} sx={{ mr: 2, alignSelf: "flex-start" }}>
                   
                 </Avatar>
                 
               )}
               
               <Paper
-                sx={{
-                  p: 1.5,
-                  maxWidth: "70%",
-                  bgcolor: IsMine(m) ? "primary.main" : "warning.main",
-                  color: IsMine(m) ? "primary.contrastText" : "text.primary"
-                }}
-              >
-                <Typography variant="body2">{m.content}</Typography>
-              </Paper>{(!IsMine(m))?<></> :(
-                <Avatar src={"../src/assets/profile-pictures/"+WhoSentIt(m)?.avatarFilePath} sx={{ ml: 2, alignSelf: "flex-end" }}>
+  sx={{
+    p: 1.5,
+    maxWidth: "70%",
+    bgcolor: IsMine(m) ? "primary.main" : "warning.main",
+    color: IsMine(m) ? "primary.contrastText" : "text.primary",
+    display: "inline-block",
+    wordBreak: "break-word",
+  }}
+>
+  <Typography variant="body2" sx={{ whiteSpace: "pre-wrap" }}>
+    {m.content}
+  </Typography>
+</Paper>
+
+              {(!IsMine(m))?<></> :(
+                <Avatar src={"data:image/png;base64, "+WhoSentIt(m)?.avatar} sx={{ ml: 2, alignSelf: "flex-end" }}>
                   
                 </Avatar>
                 
               )} 
            
-            </Box><Typography color={(IsMine(m))? "disabled":"disabled"} variant="body2" align={(!IsMine(m))?"left":"right"} paddingRight={(!IsMine(m))?"0":"4px"} paddingLeft={(!IsMine(m))?"4px":"0"}>{m.sentTimestamp.slice(0, 16)}</Typography></>
+            </Box><Typography color={(IsMine(m))? "disabled":"disabled"} variant="body2" align={(!IsMine(m))?"left":"right"} paddingRight={(!IsMine(m))?"0":"4px"} paddingLeft={(!IsMine(m))?"4px":"0"}>{m.sentTimestamp.slice(0, 16).replace("T"," | ")}</Typography></>
           ))}
           <div ref={bottomRef} />
         </Stack>

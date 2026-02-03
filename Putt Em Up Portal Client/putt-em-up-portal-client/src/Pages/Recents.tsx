@@ -141,7 +141,7 @@ if(m.toPlayerID==userContext.user.playerID){navigate("/chats/"+m.fromPlayerID);r
         {m.message.content}
       </Typography>
        <Typography variant="caption" sx={{color:"#F5F5F5"}}>
-       { m.message.sentTimestamp.slice(0,16)}</Typography>
+       { m.message.sentTimestamp.slice(0,16).replace("T"," | ")}</Typography>
     </Box></Button>);})}
           
         </Stack>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Putt Em Up Portal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24337bb54f22d542f2c358fb3e6001aeadecbb92")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afa4ca2c7f4821e56314b17513f4a98dc63f20fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Putt Em Up Portal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Putt Em Up Portal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

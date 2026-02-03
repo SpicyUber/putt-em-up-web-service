@@ -7,7 +7,7 @@ import type { Profile } from '../types/Profile';
 import next from "../assets/next-button.png"
 import { WrapText } from '@mui/icons-material';
 import { useNavigate } from "react-router-dom"; 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { Account } from '../types/Account';
 
 
@@ -15,7 +15,16 @@ import type { Account } from '../types/Account';
 export default function PlayerCard(p:Profile) {
   const navigate = useNavigate();
  const [profile, setProfile] = useState<Profile>(p);
+ const [ranking, setRanking] = useState<number>(0);
+  
+ useEffect(()=>{if(profile!=null)loadRanking();setProfile(p);},[p.playerID]);
 
+ async function loadRanking(){
+let url:string = `https://localhost:7120/api/accounts/${p?.playerID}`;
+const response : Response =  await fetch(url);
+const account:Account =await response.json() as Account ;
+setRanking(account.matchmakingRanking);
+}
 async function GoToProfile(){
       let url:string = `https://localhost:7120/api/accounts/${profile?.playerID}`;
         
@@ -44,7 +53,7 @@ async function GoToProfile(){
 <CardContent   sx={{paddingRight:"10px",paddingLeft:"15px", color: '#ffffff'}} >
      
 
-<Avatar  variant='square'  sx={{ width: 90, height: 90 }} alt={p.displayName} src={"../src/assets/profile-pictures/"+p.avatarFilePath} />
+<Avatar  variant='square'  sx={{ width: 90, height: 90 }} alt={p.displayName} src={"data:image/png;base64, " +p.avatar} />
 
  
  
@@ -80,7 +89,21 @@ async function GoToProfile(){
     width:'30vw',
   }}
 >
+  
   {p.description}
+</Typography>
+<Typography align='left'
+  variant="subtitle1"
+  sx={{
+    color:'#105396',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    width:'30vw',
+  }}
+>
+  
+  {ranking}
 </Typography>
   </Box>
      <Divider   orientation="vertical" flexItem /> 

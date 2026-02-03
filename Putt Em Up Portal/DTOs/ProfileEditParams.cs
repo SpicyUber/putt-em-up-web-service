@@ -10,6 +10,6 @@ namespace Putt_Em_Up_Portal.DTOs
 
         public string Description { get; set; }
 
-        public string AvatarFilePath { get; set; }
+        public string AvatarInBase64 { get; set; }
     }
 }

@@ -6,13 +6,14 @@ import PlayerCard from "../Components/PlayerCard";
 import {Stack,Divider} from "@mui/material";
 import type { Profile } from "../types/Profile";
 import { useParams } from "react-router-dom";
+import type { LeaderboardPage } from "../types/LeaderboardPage";
 
 
 export function Leaderboard( ){
 
     const [cardCount, setCardCount] = useState(5);
     const [pageNumber, setNumber] = useState(1);
-   
+    const [maxPages, setMaxPages] = useState(1);
     const [searchValue, setSearchValue] = useState("");
     const [searchResults,setSearchResults] = useState<Profile[]>([]);
     const [sortDescending,setSortDescending] = useState<boolean>(true);
@@ -24,9 +25,13 @@ export function Leaderboard( ){
     try {
      
     const response : Response =  await fetch(url)
+      const json = await response.json() as LeaderboardPage;
+      
 
-
-    setSearchResults(await response.json() as Profile[]);
+    setSearchResults(json.profiles);
+     if(json.totalPages<=0)
+      setMaxPages(1);
+    else setMaxPages(json.totalPages)
 
     } catch (error) {
 
@@ -69,7 +74,7 @@ else return n;
     <Stack bgcolor={'#c5d4e9ff'} sx={{ ml: -1 }} spacing={2}>
     
     {searchResults.map(p => (
-      <PlayerCard playerID={p.playerID} displayName={p.displayName} description={p.description} avatarFilePath={p.avatarFilePath} />
+      <PlayerCard playerID={p.playerID} displayName={p.displayName} description={p.description} avatar={p.avatar} />
     ))}
     </Stack>
  
@@ -90,7 +95,7 @@ else return n;
   }}
 >
   <Pagination
-    count={calculatePaginationDisplayCount()}
+    count={maxPages}
      
     onChange={(_, value) => setNumber(value)}
     color="primary"

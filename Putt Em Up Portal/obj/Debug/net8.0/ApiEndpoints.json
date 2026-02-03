@@ -155,7 +155,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.MatchPreview",
+        "Type": "Putt_Em_Up_Portal.DTOs.MatchPreviewPage",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -636,7 +636,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Putt_Em_Up_Portal.DTOs.Profile, Putt Em Up Portal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "Putt_Em_Up_Portal.DTOs.LeaderboardPage",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -13,10 +13,12 @@ import type { UserContextType } from "../hooks/UserContext";
 import UserContext from "../hooks/UserContext";
 import { EditProfile } from "./EditProfile";
 import MailIcon from '@mui/icons-material/Mail';
+import type { MatchPerformancePage } from "../types/MatchPerformancePage";
 
 export function ProfilePage(){
 
     const [cardCount, setCardCount] = useState(3);
+    const [maxPages, setMaxPages] = useState(1);
     const [pageNumber, setNumber] = useState(1);
     const [searchValue, setSearchValue] = useState("");
     const [profileDetails, setProfileDetails] = useState<Profile>();
@@ -30,7 +32,7 @@ export function ProfilePage(){
     const navigate = useNavigate();
     const userContext : UserContextType = useContext(UserContext);
     
-    useEffect(()=>{loadPlayer()},[])
+    useEffect(()=>{setNumber(1);loadPlayer();},[username])
     
     useEffect(()=>{if(profileDetails!=null)loadMatches()},[profileDetails])
       useEffect(()=>{if(profileDetails!=null)loadRanking()},[profileDetails])
@@ -46,7 +48,8 @@ setRanking(account.matchmakingRanking);
 let url:string = `https://localhost:7120/api/matches?PlayerID=${profileDetails?.playerID}&StartDate=${new Date().toISOString()}&Mode=BeforeIncludingDate&PageSize=100&PageNumber=1`;
 console.log(url);
 const response : Response =  await fetch(url);
-const matches:Match[] =await response.json() as Match[] ;
+const json: MatchPerformancePage =await response.json() as MatchPerformancePage ;
+const matches:Match[] = json.matches;
 let counter:number=0;      
 for(let i=0;i<matches.length;i++){
   if((matches[i].matchPerformances[0].wonMatch==true && matches[i].matchPerformances[0].player.playerID==profileDetails?.playerID ) || (matches[i].matchPerformances[1].wonMatch==true && matches[i].matchPerformances[1].player.playerID==profileDetails?.playerID ))counter++;
@@ -79,9 +82,11 @@ for(let i=0;i<matches.length;i++){
      
     const response : Response =  await fetch(url)
 
-
-    setSearchResults(await response.json() as Match[]);
-
+    const json:MatchPerformancePage =  await response.json() as MatchPerformancePage
+    setSearchResults(json.matches);
+    if(json.totalPages<=0)
+      setMaxPages(1);
+    else setMaxPages(json.totalPages);
     } catch (error) {
 
      console.log(profileDetails);
@@ -117,7 +122,7 @@ else return n;
     paddingTop:'12px'                
   }}>{"PROFILE"}</Typography> 
   <Stack bgcolor={"#287dd1ff"}   color={'#efefef'} minWidth={"40vw"}sx={{ ml: -1, padding:"15px" }}   spacing={'1vw'}>
-    <Stack bgcolor={"rgb(35, 110, 185)"}   direction="row" sx={{   padding:"15px" }}  ><Avatar sx={{width:"8vw",height:'fit-content'}} alt={profileDetails?.displayName} src={"../src/assets/profile-pictures/"+profileDetails?.avatarFilePath} />
+    <Stack bgcolor={"rgb(35, 110, 185)"}   direction="row" sx={{   padding:"15px" }}  ><Avatar sx={{width:"8vw",height:'fit-content'}} alt={profileDetails?.displayName} src={"data:image/png;base64, " +profileDetails?.avatar} />
       
     <Typography  variant="h5">{profileDetails?.displayName}</Typography>
     
@@ -179,7 +184,7 @@ else return n;
       <MatchCard match={m} pid={profileDetails?.playerID as BigInt}  /> 
    ))}
    <Pagination
-    count={calculatePaginationDisplayCount()}
+    count={maxPages}
      
     onChange={(_, value) => setNumber(value)}
     color="primary"

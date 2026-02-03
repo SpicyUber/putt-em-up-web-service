@@ -14,7 +14,7 @@ namespace Putt_Em_Up_Portal.Controllers
     {
 
         [HttpGet(Name = "Search")]
-        public ActionResult<MatchPreview> Search([FromQuery] MatchSearchParams searchParams)
+        public ActionResult<MatchPreviewPage> Search([FromQuery] MatchSearchParams searchParams)
         {
 
 
@@ -33,11 +33,13 @@ namespace Putt_Em_Up_Portal.Controllers
                     matches = FindMatchesDuringDate(searchParams.StartDate);
                     break;
             }
+            int totalPages = 0;
             matches = matches.Where((match) => { if (match.MatchPerformances.Length < 2) return false; return match.MatchPerformances[0].Player.PlayerID == searchParams.PlayerID || match.MatchPerformances[1].Player.PlayerID == searchParams.PlayerID; }).ToList<MatchPreview>();
-            if (matches.Count <= 0) return NotFound($"Match {searchParams.Mode} {searchParams.StartDate.ToString("MM/dd/yyyy")} could not be found.");
-            if (searchParams.PageNumber != null && searchParams.PageSize != null)
-                matches = matches.Skip((int)(searchParams.PageNumber) * (int)(searchParams.PageSize) - (int)(searchParams.PageSize)).Take((int)(searchParams.PageSize)).ToList<MatchPreview>() ;
-            return Ok(matches);
+            if (matches==null||matches.Count <= 0) return NotFound($"Match {searchParams.Mode} {searchParams.StartDate.ToString("MM/dd/yyyy")} could not be found.");
+            if (searchParams.PageNumber != null && searchParams.PageSize != null) {
+                totalPages = (int)Math.Ceiling(matches.Count/(float)searchParams.PageSize);
+            matches = matches.Skip((int)(searchParams.PageNumber) * (int)(searchParams.PageSize) - (int)(searchParams.PageSize)).Take((int)(searchParams.PageSize)).ToList<MatchPreview>(); }
+            return Ok(new MatchPreviewPage(matches.ToArray(),totalPages));
         }
 
         private List<MatchPreview> FindMatchesAfterDate(DateTime startDate)

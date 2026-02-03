@@ -109,7 +109,7 @@ export default function PrimarySearchAppBar(
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      {(userContext.user.playerID<0)?<MenuItem onClick={handleMenuClose}>Login</MenuItem>:<><MenuItem onClick={()=>{ navigate(`/profiles/${userContext.user.username}`);}}>Profile</MenuItem>
+      {(userContext.user.playerID<0)?<MenuItem onClick={()=>{navigate("/login/");}}>Login</MenuItem>:<><MenuItem onClick={()=>{ navigate(`/profiles/${userContext.user.username}`);}}>Profile</MenuItem>
       <MenuItem onClick={()=>{const newUser: LoginAnswer = {
     playerID: -1n,
     token: "",

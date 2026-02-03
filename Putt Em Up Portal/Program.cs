@@ -64,11 +64,12 @@ namespace Putt_Em_Up_Portal
             matches.Add(new Match() { MatchID = 2, Cancelled = false, StartDate = new(2022, 7, 2,12,22,33) });
             matches.Add(new Match() { MatchID = 3, Cancelled = false, StartDate = new(2023, 7, 2, 12, 22, 33) });
             matches.Add(new Match() { MatchID = 4, Cancelled = false, StartDate = new(2023, 3, 2, 12, 22, 33) });
+            matches.Add(new Match() { MatchID = 5, Cancelled = false, StartDate = new(2024, 12, 11, 12, 22, 33) });
             LocalStorage<Match>.SetSampleList(matches);
             List<Player> players = new();
-            players.Add(new() {PlayerID=0,Username="ila",Password="admin!",MatchmakingRanking=0,AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="default.png" });
-            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "123456", MatchmakingRanking = 200, AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "screaming.png" });
-            players.Add(new() { PlayerID = 2, Username = "bob", Password = "123abc", MatchmakingRanking = -200, AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "default.png" });
+            players.Add(new() {PlayerID=0,Username="ila",Password="admin!",MatchmakingRanking=0,AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="" });
+            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "123456", MatchmakingRanking = 300, AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "magnus" });
+            players.Add(new() { PlayerID = 2, Username = "bob", Password = "123abc", MatchmakingRanking = -300, AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "" });
             LocalStorage<Player>.SetSampleList(players);
             List<MatchPerformance> mps = new();
             mps.Add(new() { PlayerID =0, MatchID=0, WonMatch=false, MMRDelta=-100, FinalScore=0 });
@@ -81,6 +82,8 @@ namespace Putt_Em_Up_Portal
             mps.Add(new() { PlayerID = 1, MatchID = 3, WonMatch = false, MMRDelta = -100, FinalScore = 0 });
             mps.Add(new() { PlayerID = 0, MatchID = 4, WonMatch = false, MMRDelta = -100, FinalScore = 0 });
             mps.Add(new() { PlayerID = 1, MatchID = 4, WonMatch = true, MMRDelta = 100, FinalScore = 3 });
+            mps.Add(new() { PlayerID = 1, MatchID = 5, WonMatch = true, MMRDelta = 100, FinalScore = 3 });
+            mps.Add(new() { PlayerID = 2, MatchID = 5, WonMatch = false, MMRDelta = -100, FinalScore = 0 });
             LocalStorage<MatchPerformance>.SetSampleList(mps);
             List<Message> messages = new();
             messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2012,3,3, 1, 33, 12), Reported = false, Content = "ez" });

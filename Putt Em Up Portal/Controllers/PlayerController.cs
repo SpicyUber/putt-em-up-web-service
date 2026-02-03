@@ -1,5 +1,5 @@
 ﻿
-using Microsoft.AspNetCore.Identity.Data;
+ 
 using Microsoft.AspNetCore.Mvc;
 using Putt_Em_Up_Portal.DTOs;
 using Putt_Em_Up_Portal.Models;
@@ -25,10 +25,10 @@ namespace Putt_Em_Up_Portal.Controllers
 
         [HttpGet("profiles/search")]
 
-        public ActionResult<List<Profile>> Search([FromQuery]PlayerSearchParams playerParameters)
+        public ActionResult<LeaderboardPage> Search([FromQuery]PlayerSearchParams playerParameters)
         {
             List<Profile> list = new();
-
+            int totalPages = 0;
             IEnumerable<Player> players = LocalStorage<Player>.GetSampleList().Where<Player>((Player p) => { return (playerParameters.UsernameStartsWith == null || p.DisplayName.ToLower().StartsWith(playerParameters.UsernameStartsWith.ToLower())); });
 
             if (playerParameters.DescendingRanking) players = players.OrderByDescending((p) => { return p.MatchmakingRanking; });
@@ -40,7 +40,7 @@ namespace Putt_Em_Up_Portal.Controllers
                 foreach (Player p in players)
                     list.Add(new Profile(p));
 
-                return Ok(list);
+                return Ok(new LeaderboardPage(list.ToArray(), totalPages));
             }
             
             for (int i = 1; i < (int)playerParameters.PageNumber; i++)
@@ -51,7 +51,7 @@ namespace Putt_Em_Up_Portal.Controllers
             foreach (Player p in players)
                 list.Add(new Profile(p));
 
-            return Ok(list);
+            return Ok(new LeaderboardPage(list.ToArray(), (int)Math.Ceiling(list.Count / (float)playerParameters.PageSize)));
 
 
         }
@@ -66,7 +66,7 @@ namespace Putt_Em_Up_Portal.Controllers
             if (p != null) {
             p.DisplayName = profile.DisplayName;
             p.Description = profile.Description;
-            p.AvatarFilePath = profile.AvatarFilePath;
+            p.AvatarFilePath = CreateAvatar(profile.AvatarInBase64,p.Username);
 
                 
                 return Ok(new Profile(p)); 
@@ -74,6 +74,8 @@ namespace Putt_Em_Up_Portal.Controllers
             } else return NotFound();
 
         }
+
+       
 
         [HttpGet("accounts/{id}")]
 
@@ -127,7 +129,7 @@ namespace Putt_Em_Up_Portal.Controllers
             p.DisplayName = p.Username;
             p.Description = $"Hi, I'm {p.DisplayName}";
             p.AccountDeleted = false;
-            p.AvatarFilePath = "default.png";
+            p.AvatarFilePath = "";
             p.PlayerID = LocalStorage<Player>.GetSampleList().Max(p => p.PlayerID)+1;
             LocalStorage<Player>.AddToSampleList(p);
             return Ok(new LoginAnswer(p));
@@ -143,6 +145,20 @@ namespace Putt_Em_Up_Portal.Controllers
 
 
             return Ok(new LoginAnswer(p));
+        }
+
+
+        private string CreateAvatar(string imageInBase64, string username)
+        {
+            Guid imgGuid = Guid.NewGuid();
+            try { 
+                
+            BinaryWriter bw = new (System.IO.File.Create($"." + Path.DirectorySeparatorChar + "ProfilePictures" + Path.DirectorySeparatorChar + username + imgGuid+ ".png"));
+            bw.Write(Convert.FromBase64String(imageInBase64));
+                bw.Close();
+            }catch(Exception e) { return ""; }
+
+            return username + imgGuid;
         }
     }
 }

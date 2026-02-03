@@ -58,17 +58,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/MatchPreview"
+                  "$ref": "#/components/schemas/MatchPreviewPage"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MatchPreview"
+                  "$ref": "#/components/schemas/MatchPreviewPage"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/MatchPreview"
+                  "$ref": "#/components/schemas/MatchPreviewPage"
                 }
               }
             }
@@ -891,26 +891,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Profile"
-                  }
+                  "$ref": "#/components/schemas/LeaderboardPage"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Profile"
-                  }
+                  "$ref": "#/components/schemas/LeaderboardPage"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Profile"
-                  }
+                  "$ref": "#/components/schemas/LeaderboardPage"
                 }
               }
             }
@@ -1150,6 +1141,23 @@
         },
         "additionalProperties": false
       },
+      "LeaderboardPage": {
+        "type": "object",
+        "properties": {
+          "profiles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Profile"
+            },
+            "nullable": true
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginAnswer": {
         "type": "object",
         "properties": {
@@ -1292,6 +1300,23 @@
         },
         "additionalProperties": false
       },
+      "MatchPreviewPage": {
+        "type": "object",
+        "properties": {
+          "matches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MatchPreview"
+            },
+            "nullable": true
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "Message": {
         "type": "object",
         "properties": {
@@ -1360,8 +1385,9 @@
             "type": "string",
             "nullable": true
           },
-          "avatarFilePath": {
+          "avatar": {
             "type": "string",
+            "format": "byte",
             "nullable": true
           }
         },
@@ -1378,7 +1404,7 @@
             "type": "string",
             "nullable": true
           },
-          "avatarFilePath": {
+          "avatarInBase64": {
             "type": "string",
             "nullable": true
           }
@@ -1396,8 +1422,9 @@
             "type": "string",
             "nullable": true
           },
-          "avatarFilePath": {
+          "avatar": {
             "type": "string",
+            "format": "byte",
             "nullable": true
           }
         },
