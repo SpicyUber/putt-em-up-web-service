@@ -93,7 +93,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Putt_Em_Up_Portal.Models.Message, Putt Em Up Portal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Domain.Message, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -176,7 +176,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Match",
+        "Type": "Domain.Match",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -228,7 +228,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Match",
+        "Type": "Domain.Match",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -259,7 +259,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Match",
+        "Type": "Domain.Match",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -295,7 +295,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Message",
+        "Type": "Domain.Message",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -331,7 +331,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Message",
+        "Type": "Domain.Message",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -357,7 +357,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Message",
+        "Type": "Domain.Message",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -398,7 +398,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.Message",
+        "Type": "Domain.Message",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -424,7 +424,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[Putt_Em_Up_Portal.Models.Message, Putt Em Up Portal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Domain.Message, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -455,7 +455,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.MatchPerformance",
+        "Type": "Domain.MatchPerformance",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -481,7 +481,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.MatchPerformance",
+        "Type": "Domain.MatchPerformance",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -517,7 +517,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.Models.MatchPerformance",
+        "Type": "Domain.MatchPerformance",
         "MediaTypes": [
           "text/plain",
           "application/json",

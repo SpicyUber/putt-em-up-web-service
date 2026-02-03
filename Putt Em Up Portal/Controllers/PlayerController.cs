@@ -2,7 +2,7 @@
  
 using Microsoft.AspNetCore.Mvc;
 using Putt_Em_Up_Portal.DTOs;
-using Putt_Em_Up_Portal.Models;
+using Domain;
 using Putt_Em_Up_Portal.Testing;
 
 namespace Putt_Em_Up_Portal.Controllers

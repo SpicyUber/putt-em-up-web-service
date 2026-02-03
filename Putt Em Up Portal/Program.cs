@@ -4,7 +4,7 @@ using FluentValidation.Resources;
 using Microsoft.AspNetCore.Identity;
 using Putt_Em_Up_Portal.Hubs;
 using Putt_Em_Up_Portal.Middleware;
-using Putt_Em_Up_Portal.Models;
+using Domain;
 using Putt_Em_Up_Portal.Testing;
 using Putt_Em_Up_Portal.Validators;
 using SharpGrip.FluentValidation.AutoValidation;

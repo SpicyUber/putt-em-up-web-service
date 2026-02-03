@@ -78,3 +78,5 @@ D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\obj\Debug
 D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.pdb
 D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\obj\Debug\net8.0\Putt Em Up Portal.genruntimeconfig.cache
 D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\obj\Debug\net8.0\ref\Putt Em Up Portal.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Domain.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Domain.pdb

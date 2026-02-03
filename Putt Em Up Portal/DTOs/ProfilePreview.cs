@@ -1,4 +1,4 @@
-﻿using Putt_Em_Up_Portal.Models;
+﻿using Domain;
 
 namespace Putt_Em_Up_Portal.DTOs
 {
