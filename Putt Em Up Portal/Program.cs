@@ -10,6 +10,9 @@ using Putt_Em_Up_Portal.Validators;
 using SharpGrip.FluentValidation.AutoValidation;
 using SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions;
 using System.Text.Json.Serialization;
+using Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Putt_Em_Up_Portal
 {
@@ -27,7 +30,7 @@ namespace Putt_Em_Up_Portal
             builder.Services.AddValidatorsFromAssemblyContaining<MatchSearchParamsValidator>();
             builder.Services.AddValidatorsFromAssemblyContaining<ProfileEditParamsValidator>();
             builder.Services.AddFluentValidationAutoValidation();
-           
+            builder.Services.AddDbContext<PuttEmUpDbContext>(options => { options.UseSqlServer("Data Source=KABYLAKE;Initial Catalog=pep_db;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False"); });
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -88,25 +91,10 @@ namespace Putt_Em_Up_Portal
             List<Message> messages = new();
             messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2012,3,3, 1, 33, 12), Reported = false, Content = "ez" });
             messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 1, SentTimestamp = new(2012,3,3, 1, 34, 22), Reported = false, Content = ":(" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2022, 3, 3, 1, 33, 12), Reported = false, Content = "it's been 10 years, just reminding u it was ez" });
+            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2022, 3, 3, 1, 33, 12), Reported = false, Content = "it's been 10 years, lets play?" });
             messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 1, SentTimestamp = new(2022, 3, 3, 1, 34, 22), Reported = false, Content = "How do I block you??" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 1, 33, 12), Reported = false, Content = "hey man just letting you know im sorry for being mean to u, hope u forgive me" });
-            messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 1, SentTimestamp = new(2026, 1, 29, 1, 34, 22), Reported = false, Content = "really?" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 2, 33, 12), Reported = false, Content = "nope, ez" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 3, 33, 12), Reported = false, Content = "hahahaha" });
-            messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 1, SentTimestamp = new(2026, 1, 29, 3, 34, 22), Reported = false, Content = "Dimitrica Tucovica 23, 4. sprat, stan 21" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 3, 35, 12), Reported = false, Content = "..." });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 3, 35, 24), Reported = false, Content = "i apologize" });
-            messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 1, SentTimestamp = new(2026, 1, 29, 4, 34, 22), Reported = false, Content = "Too late now :)" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 4, 35, 12), Reported = false, Content = "pls no" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 4, 35, 25), Reported = false, Content = "pls no man" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 4, 35, 26), Reported = false, Content = "its just a game dude" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 0, SentTimestamp = new(2026, 1, 29, 4, 35, 28), Reported = false, Content = "dude?" });
-            messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 1, SentTimestamp = new(2026, 1, 29, 4, 54, 22), Reported = false, Content = "Look outside bro :D" });
-            messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 2, SentTimestamp = new(2022,7,2, 10, 11, 31), Reported = false, Content = "friendlies today?" });
-            messages.Add(new Message() { FromPlayerID = 2, ToPlayerID = 0, SentTimestamp = new(2022, 7, 2, 10, 11, 31), Reported = false, Content = "maybe" });
-            messages.Add(new Message() { FromPlayerID = 1, ToPlayerID = 2, SentTimestamp = new(2012, 3, 3, 14, 33, 12), Reported = false, Content = "ez" });
-            messages.Add(new Message() { FromPlayerID = 2, ToPlayerID = 1, SentTimestamp = new(2012, 3, 3, 14, 34, 22), Reported = true, Content = "wow" });
+            messages.Add(new Message() { FromPlayerID = 2, ToPlayerID = 0, SentTimestamp = new(2022, 3, 3, 1, 33, 13), Reported = false, Content = "hi" });
+            messages.Add(new Message() { FromPlayerID = 0, ToPlayerID = 2, SentTimestamp = new(2022, 3, 3, 1, 34, 23), Reported = false, Content = "hello" });
             LocalStorage<Message>.SetSampleList(messages);
         }
     }

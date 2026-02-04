@@ -1,0 +1,12 @@
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\bin\Debug\net8.0\Testing.deps.json
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\bin\Debug\net8.0\Testing.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\bin\Debug\net8.0\Testing.pdb
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\Testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\Testing.AssemblyInfoInputs.cache
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\Testing.AssemblyInfo.cs
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\Testing.csproj.CoreCompileInputs.cache
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\Testing.sourcelink.json
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\Testing.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\refint\Testing.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\Testing.pdb
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Testing\obj\Debug\net8.0\ref\Testing.dll

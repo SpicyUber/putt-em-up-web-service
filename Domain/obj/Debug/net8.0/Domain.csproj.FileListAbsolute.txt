@@ -1,0 +1,12 @@
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\bin\Debug\net8.0\Domain.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\Domain.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Domain\obj\Debug\net8.0\ref\Domain.dll
