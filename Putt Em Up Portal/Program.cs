@@ -1,17 +1,20 @@
 
+using Application;
+using Application.Validators;
+using Domain;
 using FluentValidation;
 using FluentValidation.Resources;
+using Infrastructure.Persistence;
+using Infrastructure.Persistence.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Putt_Em_Up_Portal.Hubs;
 using Putt_Em_Up_Portal.Middleware;
-using Domain;
 using Putt_Em_Up_Portal.Testing;
-using Putt_Em_Up_Portal.Validators;
 using SharpGrip.FluentValidation.AutoValidation;
 using SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions;
 using System.Text.Json.Serialization;
-using Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore;
+
 
 
 namespace Putt_Em_Up_Portal
@@ -25,7 +28,7 @@ namespace Putt_Em_Up_Portal
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddControllers().AddJsonOptions(opt => { opt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });
             builder.Services.AddValidatorsFromAssemblyContaining<MatchSearchParamsValidator>();
             builder.Services.AddValidatorsFromAssemblyContaining<ProfileEditParamsValidator>();
@@ -36,6 +39,8 @@ namespace Putt_Em_Up_Portal
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddSignalR();
+            builder.Configuration.AddJsonFile("Config/appConfig.json",false);
+            builder.Services.AddMediatR(cfg => { cfg.LicenseKey = builder.Configuration.GetValue<string>("mediatrKey"); cfg.RegisterServicesFromAssembly(typeof(Hook).Assembly); });
             var app = builder.Build();
 
          app.UseCors(config => { config.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod().AllowCredentials(); });

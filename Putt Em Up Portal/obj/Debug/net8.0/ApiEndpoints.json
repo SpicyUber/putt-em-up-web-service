@@ -15,7 +15,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.Account",
+        "Type": "Application.DTOs.Account",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -40,13 +40,13 @@
       },
       {
         "Name": "accountParams",
-        "Type": "Putt_Em_Up_Portal.DTOs.AccountEditParams",
+        "Type": "Application.DTOs.AccountEditParams",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.Account",
+        "Type": "Application.DTOs.Account",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -113,7 +113,7 @@
     "Parameters": [
       {
         "Name": "loginRequest",
-        "Type": "Putt_Em_Up_Portal.DTOs.LoginParams",
+        "Type": "Application.Player.Commands.LoginCommand",
         "IsRequired": true
       }
     ],
@@ -155,7 +155,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.MatchPreviewPage",
+        "Type": "Application.DTOs.MatchPreviewPage",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -202,7 +202,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.MatchPreview",
+        "Type": "Application.DTOs.MatchPreview",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -351,7 +351,7 @@
     "Parameters": [
       {
         "Name": "messageParams",
-        "Type": "Putt_Em_Up_Portal.DTOs.MessagePostParams",
+        "Type": "Application.DTOs.MessagePostParams",
         "IsRequired": true
       }
     ],
@@ -392,7 +392,7 @@
       },
       {
         "Name": "messageParams",
-        "Type": "Putt_Em_Up_Portal.DTOs.MessageEditParams",
+        "Type": "Application.DTOs.MessageEditParams",
         "IsRequired": true
       }
     ],
@@ -475,7 +475,7 @@
     "Parameters": [
       {
         "Name": "mpParams",
-        "Type": "Putt_Em_Up_Portal.DTOs.MatchPerformancePostParams",
+        "Type": "Application.DTOs.MatchPerformancePostParams",
         "IsRequired": true
       }
     ],
@@ -511,7 +511,7 @@
       },
       {
         "Name": "mpParams",
-        "Type": "Putt_Em_Up_Portal.DTOs.MatchPerformanceEditParams",
+        "Type": "Application.DTOs.MatchPerformanceEditParams",
         "IsRequired": true
       }
     ],
@@ -564,7 +564,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.Profile",
+        "Type": "Application.DTOs.Profile",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -589,13 +589,13 @@
       },
       {
         "Name": "profile",
-        "Type": "Putt_Em_Up_Portal.DTOs.ProfileEditParams",
+        "Type": "Application.DTOs.ProfileEditParams",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.Profile",
+        "Type": "Application.DTOs.Profile",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -636,7 +636,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.LeaderboardPage",
+        "Type": "Application.DTOs.LeaderboardPage",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -656,13 +656,13 @@
     "Parameters": [
       {
         "Name": "registerRequest",
-        "Type": "Putt_Em_Up_Portal.DTOs.LoginParams",
+        "Type": "Application.DTOs.LoginParams",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Putt_Em_Up_Portal.DTOs.LoginAnswer",
+        "Type": "Application.DTOs.LoginAnswer",
         "MediaTypes": [
           "text/plain",
           "application/json",

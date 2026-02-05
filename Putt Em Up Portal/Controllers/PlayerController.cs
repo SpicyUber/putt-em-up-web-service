@@ -1,9 +1,13 @@
 ﻿
- 
+
 using Microsoft.AspNetCore.Mvc;
-using Putt_Em_Up_Portal.DTOs;
 using Domain;
 using Putt_Em_Up_Portal.Testing;
+using Application.DTOs;
+using MediatR;
+using Microsoft.AspNetCore.Identity.Data;
+using Application.Player.Commands;
+using Application.Player.Queries;
 
 namespace Putt_Em_Up_Portal.Controllers
 {
@@ -11,6 +15,11 @@ namespace Putt_Em_Up_Portal.Controllers
     [ApiController]
     public class PlayerController : ControllerBase
     {
+        private readonly IMediator mediator;
+
+        public PlayerController(IMediator mediator) {
+            this.mediator = mediator;
+        }
         
         [HttpGet("profiles/{username}")]
          public ActionResult<Profile> GetProfile(string username)
@@ -79,12 +88,12 @@ namespace Putt_Em_Up_Portal.Controllers
 
         [HttpGet("accounts/{id}")]
 
-        public ActionResult<Account> GetAccount(long id){
-            Player? p = LocalStorage<Player>.GetSampleList().FirstOrDefault(p => { return id==p.PlayerID && !p.AccountDeleted; });
-            if (p == null) return NotFound();
+        public async Task<ActionResult<Account>> GetAccount(long id){
+            Account account = await mediator.Send(new GetAccountQuery() { Id = id });
 
 
-            return Ok(new Account(p));
+            if(account==null)return NotFound();
+            return Ok(account);
 
             }
 
@@ -138,13 +147,12 @@ namespace Putt_Em_Up_Portal.Controllers
         }
          
         [HttpPost("login")]
-        public ActionResult Login([FromBody]LoginParams loginRequest)
+        public async Task<ActionResult> Login([FromBody]LoginCommand loginRequest)
         {
-            Player? p  = LocalStorage<Player>.GetSampleList().FirstOrDefault(p => { return p.Username == loginRequest.Username && p.Password == loginRequest.Password && !p.AccountDeleted; }) ;
-            if (p == null) return NotFound();
+           LoginAnswer answer= await mediator.Send(loginRequest);
+            if (answer == null) return NotFound("Username and / or Password are incorrect.");
 
-
-            return Ok(new LoginAnswer(p));
+            return Ok(answer);
         }
 
 

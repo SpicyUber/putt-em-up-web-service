@@ -1084,17 +1084,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginParams"
+                "$ref": "#/components/schemas/LoginCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginParams"
+                "$ref": "#/components/schemas/LoginCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginParams"
+                "$ref": "#/components/schemas/LoginCommand"
               }
             }
           }
@@ -1170,6 +1170,20 @@
             "nullable": true
           },
           "token": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginCommand": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
             "type": "string",
             "nullable": true
           }
