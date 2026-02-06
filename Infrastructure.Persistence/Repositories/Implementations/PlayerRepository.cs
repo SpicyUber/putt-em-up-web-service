@@ -18,5 +18,19 @@ namespace Infrastructure.Persistence.Repositories.Implementations
         {
             return context.Set<Player>().SingleOrDefault(p => p.Username == username);
         }
+
+        public int GetTotalMatchmakingRanking(long id)
+        {
+            int result = 0;
+
+            result =  context.Set<Player>().Where((Player p) => p.PlayerID == id)
+                .Join(context.Set<MatchPerformance>(),
+                (Player p) => p.PlayerID, (MatchPerformance mp) => mp.PlayerID,
+                (Player p, MatchPerformance mp) => new { matchId = mp.MatchID, mmrDelta = mp.MMRDelta })
+                .Join(context.Set<Match>(), (a) => a.matchId, (Match m) => m.MatchID, (a, m) => new { mmrDelta = a.mmrDelta, cancelled = m.Cancelled })
+                .Where((a) => a.cancelled == false).Sum((a) => a.mmrDelta);
+
+            return result;
+        }
     }
 }

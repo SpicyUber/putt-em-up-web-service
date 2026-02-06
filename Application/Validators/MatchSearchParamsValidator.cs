@@ -1,9 +1,10 @@
 ﻿using Application.DTOs;
+using Application.Match.Queries;
 using FluentValidation;
 
 namespace Application.Validators
 {
-    public class MatchSearchParamsValidator : AbstractValidator<MatchSearchParams>
+    public class MatchSearchParamsValidator : AbstractValidator<SearchMatchesQuery>
     {
 
         public MatchSearchParamsValidator() {

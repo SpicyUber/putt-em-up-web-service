@@ -25,10 +25,24 @@ namespace Application.Player.Queries
             int totalPages = 0;
             IQueryable<Domain.Player> players = uow.PlayerRepository.Query().Where<Domain.Player>((Domain.Player p) => p.AccountDeleted==false && (request.UsernameStartsWith == null || p.DisplayName.ToLower().StartsWith(request.UsernameStartsWith.ToLower())));
 
-          var results =  
-                players.Join(uow.MatchPerformanceRepository.Query(), player => player.PlayerID, mp => mp.PlayerID, (player, mp) => new { p =player, mmr =mp.MMRDelta })
-                .GroupBy(a => a.p)
-                .Select((g) => new {p=g.Key , mmr =g.Sum(a=>a.mmr) });
+            var validPerformances = uow.MatchPerformanceRepository.Query()
+            .Join(uow.MatchRepository.Query(),
+            mp => mp.MatchID,
+            m => m.MatchID,
+            (mp, m) => new { mp, m })
+        .   Where(a => !a.m.Cancelled)
+            .Select(a => a.mp);
+
+            var results = players
+            .GroupJoin(
+            validPerformances,
+            player => player.PlayerID,
+            mp => mp.PlayerID,
+            (player, matchPerformances) => new
+            {
+            p = player,
+            mmr = matchPerformances.Sum(mp => (int?)mp.MMRDelta) ?? 0
+            });
 
             if (request.DescendingRanking) results = results.OrderByDescending((r) => r.mmr);
              else results = results.OrderBy((r) => r.mmr);
@@ -41,7 +55,7 @@ namespace Application.Player.Queries
 
                 return Task.FromResult(new LeaderboardPage(list.ToArray(), totalPages));
             }
-
+            totalPages = (int)Math.Ceiling(results.Count() / (float)request.PageSize);
             for (int i = 1; i < (int)request.PageNumber; i++)
                 results = results.Skip((int)request.PageSize);
 
@@ -50,7 +64,7 @@ namespace Application.Player.Queries
             foreach (var result in results)
                 list.Add(new Profile(result.p, ap.GetAvatar(result.p.AvatarFilePath)));
 
-            return Task.FromResult(new LeaderboardPage(list.ToArray(), (int)Math.Ceiling(list.Count / (float)request.PageSize)));
+            return Task.FromResult(new LeaderboardPage(list.ToArray(), totalPages));
         }
     }
 }

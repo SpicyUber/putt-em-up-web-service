@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Player.Commands
 {
-    public class DeleteAccountCommand: IRequest
+    public class DeleteAccountCommand: IRequest<bool>
     {
         public long Id { get; set; }
     }

@@ -83,7 +83,7 @@ namespace Putt_Em_Up_Portal.Controllers
 
              return Ok(new Account(p));*/
             Account a = await mediator.Send(new EditAccountCommand() { Id = id, AccountParams = accountParams });
-            if(a==null) return BadRequest();
+            if(a==null) return NotFound();
             return Ok(a);
         }
 
@@ -91,8 +91,8 @@ namespace Putt_Em_Up_Portal.Controllers
 
         public async Task<ActionResult> DeleteAccount(long id) {
 
-             await mediator.Send(new DeleteAccountCommand() { Id = id});
-            return Ok();
+           bool success =  await mediator.Send(new DeleteAccountCommand() { Id = id});
+            return (success)?NoContent(): NotFound("Could not find Id.");
             }
 
 

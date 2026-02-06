@@ -10,5 +10,7 @@ namespace Infrastructure.Persistence.Repositories.Interfaces
     public interface IPlayerRepository : IRepository<Player>
     {
         Player GetByUsername(string username);
+
+        int GetTotalMatchmakingRanking(long id);
     }
 }
