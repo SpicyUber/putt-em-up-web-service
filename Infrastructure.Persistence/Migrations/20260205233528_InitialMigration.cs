@@ -13,23 +13,6 @@ namespace Infrastructure.Persistence.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
-            migrationBuilder.Sql(@"
-            CREATE FUNCTION dbo.GetMMR(@PlayerID BIGINT)
-            RETURNS INT
-            AS
-            BEGIN
-            DECLARE @TotalMMR INT;
-
-            SELECT @TotalMMR = COALESCE(SUM(MMRDelta), 0)
-            FROM MatchPerformances
-            WHERE PlayerID = @PlayerID;
-
-            RETURN @TotalMMR;
-            END
-             
-             ");
-
             migrationBuilder.CreateTable(
                 name: "Matches",
                 columns: table => new
@@ -50,9 +33,8 @@ namespace Infrastructure.Persistence.Migrations
                 {
                     PlayerID = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Username = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MatchmakingRanking = table.Column<int>(type: "int", nullable: false, computedColumnSql: "dbo.GetMMR([PlayerID])"),
                     AccountDeleted = table.Column<bool>(type: "bit", nullable: false),
                     DisplayName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -178,6 +160,12 @@ namespace Infrastructure.Persistence.Migrations
                 name: "IX_Messages_ToPlayerID",
                 table: "Messages",
                 column: "ToPlayerID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Players_Username",
+                table: "Players",
+                column: "Username",
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -194,8 +182,6 @@ namespace Infrastructure.Persistence.Migrations
 
             migrationBuilder.DropTable(
                 name: "Players");
-
-            migrationBuilder.Sql("DROP FUNCTION dbo.GetMMR ");
         }
     }
 }

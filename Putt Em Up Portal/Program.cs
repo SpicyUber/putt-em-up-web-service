@@ -5,6 +5,7 @@ using Domain;
 using FluentValidation;
 using FluentValidation.Resources;
 using Infrastructure.Persistence;
+using Infrastructure.Persistence.AvatarProvider;
 using Infrastructure.Persistence.UnitOfWork;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -29,11 +30,12 @@ namespace Putt_Em_Up_Portal
 
             // Add services to the container.
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IAvatarProvider, AvatarProvider>();
             builder.Services.AddControllers().AddJsonOptions(opt => { opt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });
             builder.Services.AddValidatorsFromAssemblyContaining<MatchSearchParamsValidator>();
             builder.Services.AddValidatorsFromAssemblyContaining<ProfileEditParamsValidator>();
             builder.Services.AddFluentValidationAutoValidation();
-            builder.Services.AddDbContext<PuttEmUpDbContext>(options => { options.UseSqlServer("Data Source=KABYLAKE;Initial Catalog=pep_db;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False"); });
+            builder.Services.AddDbContext<PuttEmUpDbContext>(options => { options.UseSqlServer("Data Source=KABYLAKE;Initial Catalog=pep_db;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False"); });
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -75,9 +77,9 @@ namespace Putt_Em_Up_Portal
             matches.Add(new Match() { MatchID = 5, Cancelled = false, StartDate = new(2024, 12, 11, 12, 22, 33) });
             LocalStorage<Match>.SetSampleList(matches);
             List<Player> players = new();
-            players.Add(new() {PlayerID=0,Username="ila",Password="admin!",MatchmakingRanking=0,AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="" });
-            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "123456", MatchmakingRanking = 300, AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "magnus" });
-            players.Add(new() { PlayerID = 2, Username = "bob", Password = "123abc", MatchmakingRanking = -300, AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "" });
+            players.Add(new() {PlayerID=0,Username="ila",Password="admin!",AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="" });
+            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "123456", AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "magnus" });
+            players.Add(new() { PlayerID = 2, Username = "bob", Password = "123abc", AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "" });
             LocalStorage<Player>.SetSampleList(players);
             List<MatchPerformance> mps = new();
             mps.Add(new() { PlayerID =0, MatchID=0, WonMatch=false, MMRDelta=-100, FinalScore=0 });

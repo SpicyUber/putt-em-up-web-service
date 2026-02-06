@@ -656,7 +656,7 @@
     "Parameters": [
       {
         "Name": "registerRequest",
-        "Type": "Application.DTOs.LoginParams",
+        "Type": "Application.Player.Commands.RegisterCommand",
         "IsRequired": true
       }
     ],

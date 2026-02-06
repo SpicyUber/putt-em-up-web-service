@@ -7,14 +7,13 @@ namespace Application.DTOs
         public long PlayerID { get; set; }
         public string DisplayName { get; set; }
         public byte[] Avatar { get; set; }
-        public ProfilePreview(Domain.Player player)
+        public ProfilePreview(Domain.Player player, byte[] avatar)
         {
             PlayerID=player.PlayerID;
             DisplayName=player.DisplayName;
 
-            if (player.AvatarFilePath == null || player.AvatarFilePath.Length == 0 || PlayerID < 0 || player.Username.Length == 0) { player.AvatarFilePath = ""; }
-            Avatar = File.ReadAllBytes($"." + Path.DirectorySeparatorChar + "ProfilePictures" + Path.DirectorySeparatorChar + player.AvatarFilePath + ".png");
-
+            if (avatar != null && avatar.Length>0) 
+            Avatar = avatar;
         }
     }
 }

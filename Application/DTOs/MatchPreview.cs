@@ -11,13 +11,13 @@ namespace Application.DTOs
 
         public MatchPerformancePreview[] MatchPerformances { get; set; }
 
-        public MatchPreview(Match match, Domain.Player player1, Domain.Player player2, MatchPerformance matchPerformancePlayer1, MatchPerformance matchPerformancePlayer2)
+        public MatchPreview(Match match, Domain.Player player1, Domain.Player player2, MatchPerformance matchPerformancePlayer1, MatchPerformance matchPerformancePlayer2, byte[] player1Avatar, byte[] player2Avatar)
         {
             MatchID = match.MatchID;
             StartDate = match.StartDate;
             MatchPerformances = new MatchPerformancePreview[2];
-            MatchPerformances[0] = new(matchPerformancePlayer1, player1);
-            MatchPerformances[1] = new(matchPerformancePlayer2, player2);
+            MatchPerformances[0] = new(matchPerformancePlayer1, player1,player1Avatar);
+            MatchPerformances[1] = new(matchPerformancePlayer2, player2, player2Avatar);
         }
     }
 }

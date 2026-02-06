@@ -8,11 +8,11 @@ namespace Application.DTOs
         public string Username { get; set; }
         public int MatchmakingRanking { get; set; }
 
-        public Account(Domain.Player p)
+        public Account(Domain.Player p,int matchmakingRanking)
         {
             PlayerID = p.PlayerID;
             Username = p.Username;
-            MatchmakingRanking = p.MatchmakingRanking;
+            this.MatchmakingRanking = matchmakingRanking;
         }
         
     }

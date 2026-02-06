@@ -1036,17 +1036,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginParams"
+                "$ref": "#/components/schemas/RegisterCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginParams"
+                "$ref": "#/components/schemas/RegisterCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/LoginParams"
+                "$ref": "#/components/schemas/RegisterCommand"
               }
             }
           }
@@ -1177,20 +1177,6 @@
         "additionalProperties": false
       },
       "LoginCommand": {
-        "type": "object",
-        "properties": {
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "LoginParams": {
         "type": "object",
         "properties": {
           "username": {
@@ -1439,6 +1425,20 @@
           "avatar": {
             "type": "string",
             "format": "byte",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterCommand": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
             "nullable": true
           }
         },

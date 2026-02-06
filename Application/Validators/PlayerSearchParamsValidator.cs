@@ -1,9 +1,10 @@
 ﻿using Application.DTOs;
+using Application.Player.Queries;
 using FluentValidation;
 
 namespace Application.Validators
 {
-    public class PlayerSearchParamsValidator : AbstractValidator< PlayerSearchParams>
+    public class PlayerSearchParamsValidator : AbstractValidator< SearchPlayersQuery>
     {
         public PlayerSearchParamsValidator() {
         

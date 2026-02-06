@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.Player.Queries
 {
-    public class GetAccountQuery : IRequest<Account>
+    public class FindAccountByIdQuery : IRequest<Account>
     {
       
         public long Id { get; set; }

@@ -16,7 +16,7 @@ namespace Infrastructure.Persistence.Repositories.Implementations
 
         public Player GetByUsername(string username)
         {
-            return context.Set<Player>().Find(username);
+            return context.Set<Player>().SingleOrDefault(p => p.Username == username);
         }
     }
 }

@@ -57,31 +57,33 @@ namespace Putt_Em_Up_Portal.Controllers
         {
 
 
-            List<MatchPerformance> listMP = LocalStorage<MatchPerformance>.GetSampleList().Where(mp =>
-            {
-                return match.MatchID == mp.MatchID;
+            /*  List<MatchPerformance> listMP = LocalStorage<MatchPerformance>.GetSampleList().Where(mp =>
+              {
+                  return match.MatchID == mp.MatchID;
 
-            }).ToList();
+              }).ToList();
 
-            if (listMP.Count < 2) return null;
+              if (listMP.Count < 2) return null;
 
-            MatchPerformance mp1 = listMP[0];
-            MatchPerformance mp2 = listMP[1];
+              MatchPerformance mp1 = listMP[0];
+              MatchPerformance mp2 = listMP[1];
 
-            List<Player> playerList = LocalStorage<Player>.GetSampleList().Where((Player player) => { return (player.PlayerID == mp1.PlayerID || player.PlayerID == mp2.PlayerID); }).ToList();
-
-            
-            Player p1 = LocalStorage<Player>.GetSampleList().FirstOrDefault((Player player) => {
-                return (player.PlayerID == mp1.PlayerID);
-            });
-            Player p2 = LocalStorage<Player>.GetSampleList().FirstOrDefault((Player player) => {
-                return (player.PlayerID == mp2.PlayerID);
-            });
-            if (p1 == null || p2 == null) return null;
-
-            return new(match, p1, p2, mp1, mp2);
+              List<Player> playerList = LocalStorage<Player>.GetSampleList().Where((Player player) => { return (player.PlayerID == mp1.PlayerID || player.PlayerID == mp2.PlayerID); }).ToList();
 
 
+              Player p1 = LocalStorage<Player>.GetSampleList().FirstOrDefault((Player player) => {
+                  return (player.PlayerID == mp1.PlayerID);
+              });
+              Player p2 = LocalStorage<Player>.GetSampleList().FirstOrDefault((Player player) => {
+                  return (player.PlayerID == mp2.PlayerID);
+              });
+              if (p1 == null || p2 == null) return null;
+
+              return new(match, p1, p2, mp1, mp2);
+
+              */
+
+            return null;
 
 
 

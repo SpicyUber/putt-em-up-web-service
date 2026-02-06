@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(PuttEmUpDbContext))]
-    [Migration("20260204144525_UsernamesAreUnique")]
-    partial class UsernamesAreUnique
+    [Migration("20260205233528_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -280,11 +280,6 @@ namespace Infrastructure.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("MatchmakingRanking")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("int")
-                        .HasComputedColumnSql("dbo.GetMMR([PlayerID])");
-
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -308,7 +303,6 @@ namespace Infrastructure.Persistence.Migrations
                             AvatarFilePath = "",
                             Description = "My Description.",
                             DisplayName = "Aleksandar",
-                            MatchmakingRanking = 0,
                             Password = "admin!",
                             Username = "ila"
                         },
@@ -319,7 +313,6 @@ namespace Infrastructure.Persistence.Migrations
                             AvatarFilePath = "magnus",
                             Description = "I am very good at this game.",
                             DisplayName = "Magnus",
-                            MatchmakingRanking = 300,
                             Password = "123456",
                             Username = "magnus"
                         },
@@ -330,7 +323,6 @@ namespace Infrastructure.Persistence.Migrations
                             AvatarFilePath = "",
                             Description = "I am very bad at this game.",
                             DisplayName = "Bob",
-                            MatchmakingRanking = -300,
                             Password = "123abc",
                             Username = "bob"
                         });

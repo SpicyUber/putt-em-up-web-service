@@ -3,148 +3,175 @@
   "WorkspaceRootPath": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\deleteaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\deleteaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\queries\\getaccountqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\queries\\getaccountqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\queries\\getaccountquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\queries\\getaccountquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\repositories\\implementations\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\repositories\\implementations\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\logincommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\logincommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchperformancepreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchperformancepreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\middleware\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\middleware\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\profilepreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\profilepreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\leaderboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\leaderboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\loginanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\loginanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchsearchparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchsearchparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\messagepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\messagepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\playersearchparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\playersearchparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\searchmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\searchmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\profileeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\profileeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\messageeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\messageeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchpreviewpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchpreviewpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchperformancepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchperformancepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchperformanceeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchperformanceeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\loginparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\loginparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\accounteditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\accounteditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\hubs\\messagehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\hubs\\messagehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\messagepostparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\messagepostparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\messageeditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\messageeditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\matchsearchparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\matchsearchparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\playersearchparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\playersearchparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\profileeditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\profileeditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\putt em up portal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\putt em up portal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\repositories\\implementations\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\repositories\\implementations\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\registercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\registercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\editprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\editprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\logincommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\logincommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\editaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\editaccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\editprofilecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\editprofilecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\deleteaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\deleteaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\queries\\findaccountbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\queries\\findaccountbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\queries\\findaccountbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\queries\\findaccountbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\validators\\accounteditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\validators\\accounteditparamsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\editaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\editaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\queries\\findprofilebyusernamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\queries\\findprofilebyusernamequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\queries\\findprofilebyusernamequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\queries\\findprofilebyusernamequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\queries\\searchplayersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\queries\\searchplayersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\queries\\searchplayersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\queries\\searchplayersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\player\\commands\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\player\\commands\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\avatarprovider\\avatarprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\avatarprovider\\avatarprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\searchmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\searchmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchsearchparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchsearchparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\profileeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\profileeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Aleksa\\Downloads\\Repository\\Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Migrations\\20260205233528_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure.Persistence\\Migrations\\20260205233528_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\puttemupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\puttemupdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\config\\appconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\config\\appconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2733B030-D348-41AD-881B-52F03716874A}|Domain\\Domain.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\domain\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2733B030-D348-41AD-881B-52F03716874A}|Domain\\Domain.csproj|solutionrelative:domain\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchperformancepreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchperformancepreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\hubs\\messagehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\hubs\\messagehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\middleware\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\middleware\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\repositories\\implementations\\playerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\repositories\\implementations\\playerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\avatarprovider\\iavatarprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\avatarprovider\\iavatarprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\controllers\\matchperformancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\matchperformancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchperformanceeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchperformanceeditparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchperformancepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchperformancepostparams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\dtos\\matchpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\dtos\\matchpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\repositories\\interfaces\\imatchperformancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,50 +180,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2733B030-D348-41AD-881B-52F03716874A}|Domain\\Domain.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\domain\\matchperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2733B030-D348-41AD-881B-52F03716874A}|Domain\\Domain.csproj|solutionrelative:domain\\matchperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\repositories\\interfaces\\iplayerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\repositories\\interfaces\\iplayerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\application\\hook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EA04FAE-0974-489C-A4FF-911B60C58F77}|Application\\Application.csproj|solutionrelative:application\\hook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2733B030-D348-41AD-881B-52F03716874A}|Domain\\Domain.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2733B030-D348-41AD-881B-52F03716874A}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\config\\appconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\config\\appconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\repositories\\implementations\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\repositories\\implementations\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\infrastructure.persistence\\repositories\\implementations\\playerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAE3FB7B-490E-4CD8-ABEE-B77011670BA6}|Infrastructure.Persistence\\Infrastructure.Persistence.csproj|solutionrelative:infrastructure.persistence\\repositories\\implementations\\playerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|d:\\aleksa\\desktop\\web service\\putt-em-up-web-service\\putt em up portal\\controllers\\matchperformancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DF3F53F-6CDF-4518-AC3C-B3B968E741E6}|Putt Em Up Portal\\Putt Em Up Portal.csproj|solutionrelative:putt em up portal\\controllers\\matchperformancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -205,209 +188,183 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 342,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 287,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "IPlayerRepository.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Interfaces\\IPlayerRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure.Persistence\\Repositories\\Interfaces\\IPlayerRepository.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Interfaces\\IPlayerRepository.cs",
-              "RelativeToolTip": "Infrastructure.Persistence\\Repositories\\Interfaces\\IPlayerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "EditProfileCommand.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\EditProfileCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Commands\\EditProfileCommand.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\EditProfileCommand.cs",
+              "RelativeToolTip": "Application\\Player\\Commands\\EditProfileCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T14:23:16.107Z",
+              "WhenOpened": "2026-02-05T18:01:57.1Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure.Persistence\\Repositories\\Implementations\\GenericRepository.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\GenericRepository.cs",
-              "RelativeToolTip": "Infrastructure.Persistence\\Repositories\\Implementations\\GenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Controllers\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\PlayerController.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Controllers\\PlayerController.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Controllers\\PlayerController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwHYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T13:36:31.557Z",
+              "WhenOpened": "2025-11-26T11:55:43.19Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ProfileEditParamsValidator.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\ProfileEditParamsValidator.cs",
-              "RelativeDocumentMoniker": "Application\\Validators\\ProfileEditParamsValidator.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\ProfileEditParamsValidator.cs",
-              "RelativeToolTip": "Application\\Validators\\ProfileEditParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure.Persistence\\Repositories\\Implementations\\GenericRepository.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\GenericRepository.cs",
+              "RelativeToolTip": "Infrastructure.Persistence\\Repositories\\Implementations\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:58:28.791Z",
+              "WhenOpened": "2026-02-06T01:31:14.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "PlayerSearchParamsValidator.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\PlayerSearchParamsValidator.cs",
-              "RelativeDocumentMoniker": "Application\\Validators\\PlayerSearchParamsValidator.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\PlayerSearchParamsValidator.cs",
-              "RelativeToolTip": "Application\\Validators\\PlayerSearchParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:58:24.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "MessageEditParamsValidator.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\MessageEditParamsValidator.cs",
-              "RelativeDocumentMoniker": "Application\\Validators\\MessageEditParamsValidator.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\MessageEditParamsValidator.cs",
-              "RelativeToolTip": "Application\\Validators\\MessageEditParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:58:16.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MatchSearchParamsValidator.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\MatchSearchParamsValidator.cs",
-              "RelativeDocumentMoniker": "Application\\Validators\\MatchSearchParamsValidator.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\MatchSearchParamsValidator.cs",
-              "RelativeToolTip": "Application\\Validators\\MatchSearchParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:58:10.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "LoginCommandValidator.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\LoginCommandValidator.cs",
               "RelativeDocumentMoniker": "Application\\Validators\\LoginCommandValidator.cs",
               "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\LoginCommandValidator.cs",
               "RelativeToolTip": "Application\\Validators\\LoginCommandValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:56:33.982Z",
+              "WhenOpened": "2026-02-06T01:22:20.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "MessagePostParamsValidator.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\MessagePostParamsValidator.cs",
-              "RelativeDocumentMoniker": "Application\\Validators\\MessagePostParamsValidator.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\MessagePostParamsValidator.cs",
-              "RelativeToolTip": "Application\\Validators\\MessagePostParamsValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "RegisterCommandValidator.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\RegisterCommandValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Validators\\RegisterCommandValidator.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\RegisterCommandValidator.cs",
+              "RelativeToolTip": "Application\\Validators\\RegisterCommandValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:56:29.628Z",
+              "WhenOpened": "2026-02-06T01:21:09.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\appsettings.json",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\appsettings.json",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\appsettings.json",
-              "RelativeToolTip": "Putt Em Up Portal\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-05T11:21:40.359Z",
+              "DocumentIndex": 1,
+              "Title": "RegisterCommandHandler.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\RegisterCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Commands\\RegisterCommandHandler.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\RegisterCommandHandler.cs",
+              "RelativeToolTip": "Application\\Player\\Commands\\RegisterCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T01:19:03.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SearchMode.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\SearchMode.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\SearchMode.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\SearchMode.cs",
-              "RelativeToolTip": "Application\\DTOs\\SearchMode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RegisterCommand.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\RegisterCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Commands\\RegisterCommand.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\RegisterCommand.cs",
+              "RelativeToolTip": "Application\\Player\\Commands\\RegisterCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:19:49.874Z",
+              "WhenOpened": "2026-02-06T01:18:49.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProfilePreview.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\ProfilePreview.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\ProfilePreview.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\ProfilePreview.cs",
-              "RelativeToolTip": "Application\\DTOs\\ProfilePreview.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "EditAccountCommandHandler.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\EditAccountCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Commands\\EditAccountCommandHandler.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\EditAccountCommandHandler.cs",
+              "RelativeToolTip": "Application\\Player\\Commands\\EditAccountCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:19:44.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Profile.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\Profile.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Profile.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\Profile.cs",
-              "RelativeToolTip": "Application\\DTOs\\Profile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:18:59.691Z",
+              "WhenOpened": "2026-02-06T01:08:53.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "PlayerSearchParams.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\PlayerSearchParams.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\PlayerSearchParams.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\PlayerSearchParams.cs",
-              "RelativeToolTip": "Application\\DTOs\\PlayerSearchParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "Title": "AccountEditParamsValidator.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\AccountEditParamsValidator.cs",
+              "RelativeDocumentMoniker": "Application\\Validators\\AccountEditParamsValidator.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Validators\\AccountEditParamsValidator.cs",
+              "RelativeToolTip": "Application\\Validators\\AccountEditParamsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:18:53.46Z",
+              "WhenOpened": "2026-02-06T01:07:29.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MessagePostParams.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MessagePostParams.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\MessagePostParams.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MessagePostParams.cs",
-              "RelativeToolTip": "Application\\DTOs\\MessagePostParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "EditAccountCommand.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\EditAccountCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Commands\\EditAccountCommand.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\EditAccountCommand.cs",
+              "RelativeToolTip": "Application\\Player\\Commands\\EditAccountCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:18:47.603Z",
+              "WhenOpened": "2026-02-06T01:05:57.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MessageEditParams.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MessageEditParams.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\MessageEditParams.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MessageEditParams.cs",
-              "RelativeToolTip": "Application\\DTOs\\MessageEditParams.cs",
+              "DocumentIndex": 0,
+              "Title": "DeleteAccountCommandHandler.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\DeleteAccountCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Commands\\DeleteAccountCommandHandler.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\DeleteAccountCommandHandler.cs",
+              "RelativeToolTip": "Application\\Player\\Commands\\DeleteAccountCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T00:51:13.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeleteAccountCommand.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\DeleteAccountCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Commands\\DeleteAccountCommand.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\DeleteAccountCommand.cs",
+              "RelativeToolTip": "Application\\Player\\Commands\\DeleteAccountCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T00:48:23.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SearchMode.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\SearchMode.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\SearchMode.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\SearchMode.cs",
+              "RelativeToolTip": "Application\\DTOs\\SearchMode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:18:41.488Z",
+              "WhenOpened": "2026-02-06T00:00:44.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "MatchSearchParams.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchSearchParams.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\MatchSearchParams.cs",
@@ -415,151 +372,136 @@
               "RelativeToolTip": "Application\\DTOs\\MatchSearchParams.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:18:16.963Z",
+              "WhenOpened": "2026-02-06T00:00:43.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MatchPreviewPage.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPreviewPage.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPreviewPage.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPreviewPage.cs",
-              "RelativeToolTip": "Application\\DTOs\\MatchPreviewPage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Downloads\\Repository\\Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Repository\\Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "D:\\Aleksa\\Downloads\\Repository\\Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Repository\\Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:18:11.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "MatchPreview.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPreview.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPreview.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPreview.cs",
-              "RelativeToolTip": "Application\\DTOs\\MatchPreview.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:18:04.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MatchPerformancePreview.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformancePreview.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPerformancePreview.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformancePreview.cs",
-              "RelativeToolTip": "Application\\DTOs\\MatchPerformancePreview.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:17:54.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MatchPerformancePostParams.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformancePostParams.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPerformancePostParams.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformancePostParams.cs",
-              "RelativeToolTip": "Application\\DTOs\\MatchPerformancePostParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:17:49.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MatchPerformanceEditParams.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformanceEditParams.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPerformanceEditParams.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformanceEditParams.cs",
-              "RelativeToolTip": "Application\\DTOs\\MatchPerformanceEditParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:17:45.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "LoginParams.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\LoginParams.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\LoginParams.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\LoginParams.cs",
-              "RelativeToolTip": "Application\\DTOs\\LoginParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:17:40.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginAnswer.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\LoginAnswer.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\LoginAnswer.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\LoginAnswer.cs",
-              "RelativeToolTip": "Application\\DTOs\\LoginAnswer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:17:33.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LeaderboardPage.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\LeaderboardPage.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\LeaderboardPage.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\LeaderboardPage.cs",
-              "RelativeToolTip": "Application\\DTOs\\LeaderboardPage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:17:21.68Z",
+              "WhenOpened": "2026-02-06T00:00:03.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "AccountEditParams.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\AccountEditParams.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\AccountEditParams.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\AccountEditParams.cs",
-              "RelativeToolTip": "Application\\DTOs\\AccountEditParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:17:03.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "ProfileEditParams.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\ProfileEditParams.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\ProfileEditParams.cs",
               "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\ProfileEditParams.cs",
               "RelativeToolTip": "Application\\DTOs\\ProfileEditParams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:14:46.885Z",
+              "WhenOpened": "2026-02-05T23:41:10.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
+              "Title": "20260205233528_InitialMigration.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Migrations\\20260205233528_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Infrastructure.Persistence\\Migrations\\20260205233528_InitialMigration.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Migrations\\20260205233528_InitialMigration.cs",
+              "RelativeToolTip": "Infrastructure.Persistence\\Migrations\\20260205233528_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T23:35:28.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appConfig.json",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Config\\appConfig.json",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Config\\appConfig.json",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Config\\appConfig.json",
+              "RelativeToolTip": "Putt Em Up Portal\\Config\\appConfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-05T23:32:22.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Program.cs",
+              "RelativeDocumentMoniker": "Putt Em Up Portal\\Program.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Program.cs",
+              "RelativeToolTip": "Putt Em Up Portal\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T23:19:14.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Account.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\Account.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Account.cs",
               "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\Account.cs",
               "RelativeToolTip": "Application\\DTOs\\Account.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:13:28.126Z",
+              "WhenOpened": "2026-02-05T23:18:25.888Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Domain\\Player.cs",
+              "RelativeDocumentMoniker": "Domain\\Player.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Domain\\Player.cs",
+              "RelativeToolTip": "Domain\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T23:17:32.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PuttEmUpDbContext.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\PuttEmUpDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure.Persistence\\PuttEmUpDbContext.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\PuttEmUpDbContext.cs",
+              "RelativeToolTip": "Infrastructure.Persistence\\PuttEmUpDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBQAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T19:33:49.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PlayerRepository.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\PlayerRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure.Persistence\\Repositories\\Implementations\\PlayerRepository.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\PlayerRepository.cs",
+              "RelativeToolTip": "Infrastructure.Persistence\\Repositories\\Implementations\\PlayerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T19:17:30.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\Profile.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Profile.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\Profile.cs",
+              "RelativeToolTip": "Application\\DTOs\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T19:16:38.603Z"
             },
             {
               "$type": "Document",
@@ -569,189 +511,177 @@
               "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\MatchController.cs",
               "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Controllers\\MatchController.cs",
               "RelativeToolTip": "Putt Em Up Portal\\Controllers\\MatchController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAwwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:12:55.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Putt Em Up Portal",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Putt Em Up Portal.csproj",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Putt Em Up Portal.csproj",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Putt Em Up Portal.csproj",
-              "RelativeToolTip": "Putt Em Up Portal\\Putt Em Up Portal.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-05T10:34:14.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T19:09:08.818Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
-              "Title": "Domain",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Domain\\Domain.csproj",
-              "RelativeToolTip": "Domain\\Domain.csproj",
+              "Title": "MatchPerformancePostParams.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformancePostParams.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPerformancePostParams.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformancePostParams.cs",
+              "RelativeToolTip": "Application\\DTOs\\MatchPerformancePostParams.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-05T10:34:09.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Application",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Application.csproj",
-              "RelativeDocumentMoniker": "Application\\Application.csproj",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Application.csproj",
-              "RelativeToolTip": "Application\\Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-05T10:34:04.964Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T19:09:02.319Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "Hook.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Hook.cs",
-              "RelativeDocumentMoniker": "Application\\Hook.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Hook.cs",
-              "RelativeToolTip": "Application\\Hook.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Title": "MatchPerformanceEditParams.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformanceEditParams.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPerformanceEditParams.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformanceEditParams.cs",
+              "RelativeToolTip": "Application\\DTOs\\MatchPerformanceEditParams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T10:29:09.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T19:09:01.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MatchPerformancePreview.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformancePreview.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPerformancePreview.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPerformancePreview.cs",
+              "RelativeToolTip": "Application\\DTOs\\MatchPerformancePreview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T19:08:03.673Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 42,
-              "Title": "appConfig.json",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Config\\appConfig.json",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Config\\appConfig.json",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Config\\appConfig.json",
-              "RelativeToolTip": "Putt Em Up Portal\\Config\\appConfig.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-05T10:10:04.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Putt Em Up Portal\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-05T10:09:09.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs",
-              "RelativeToolTip": "Infrastructure.Persistence\\UnitOfWork\\UnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
+              "Title": "MatchPreview.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPreview.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\MatchPreview.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\DTOs\\MatchPreview.cs",
+              "RelativeToolTip": "Application\\DTOs\\MatchPreview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:22:48.176Z",
+              "WhenOpened": "2026-02-05T19:05:42.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AvatarProvider.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\AvatarProvider\\AvatarProvider.cs",
+              "RelativeDocumentMoniker": "Infrastructure.Persistence\\AvatarProvider\\AvatarProvider.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\AvatarProvider\\AvatarProvider.cs",
+              "RelativeToolTip": "Infrastructure.Persistence\\AvatarProvider\\AvatarProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T18:30:51.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\UnitOfWork\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "Infrastructure.Persistence\\UnitOfWork\\IUnitOfWork.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\UnitOfWork\\IUnitOfWork.cs",
-              "RelativeToolTip": "Infrastructure.Persistence\\UnitOfWork\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 36,
+              "Title": "IAvatarProvider.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\AvatarProvider\\IAvatarProvider.cs",
+              "RelativeDocumentMoniker": "Infrastructure.Persistence\\AvatarProvider\\IAvatarProvider.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\AvatarProvider\\IAvatarProvider.cs",
+              "RelativeToolTip": "Infrastructure.Persistence\\AvatarProvider\\IAvatarProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:18:20.825Z",
+              "WhenOpened": "2026-02-05T18:28:18.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EditProfileCommandHandler.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\EditProfileCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Commands\\EditProfileCommandHandler.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\EditProfileCommandHandler.cs",
+              "RelativeToolTip": "Application\\Player\\Commands\\EditProfileCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T18:08:04.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "MessageRepository.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\MessageRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure.Persistence\\Repositories\\Implementations\\MessageRepository.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\MessageRepository.cs",
-              "RelativeToolTip": "Infrastructure.Persistence\\Repositories\\Implementations\\MessageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "SearchPlayersQueryHandler.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\SearchPlayersQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Queries\\SearchPlayersQueryHandler.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\SearchPlayersQueryHandler.cs",
+              "RelativeToolTip": "Application\\Player\\Queries\\SearchPlayersQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:17:51.817Z",
+              "WhenOpened": "2026-02-05T17:38:53.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "PlayerRepository.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\PlayerRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure.Persistence\\Repositories\\Implementations\\PlayerRepository.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Implementations\\PlayerRepository.cs",
-              "RelativeToolTip": "Infrastructure.Persistence\\Repositories\\Implementations\\PlayerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "SearchPlayersQuery.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\SearchPlayersQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Queries\\SearchPlayersQuery.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\SearchPlayersQuery.cs",
+              "RelativeToolTip": "Application\\Player\\Queries\\SearchPlayersQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:17:50.099Z",
+              "WhenOpened": "2026-02-05T17:36:13.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Program.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Program.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Program.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "FindProfileByUsernameQueryHandler.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\FindProfileByUsernameQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Queries\\FindProfileByUsernameQueryHandler.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\FindProfileByUsernameQueryHandler.cs",
+              "RelativeToolTip": "Application\\Player\\Queries\\FindProfileByUsernameQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T15:16:22.052Z",
+              "WhenOpened": "2026-02-05T17:19:06.249Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 306,
-          "SelectedChildIndex": 7,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetAccountQueryHandler.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\GetAccountQueryHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Player\\Queries\\GetAccountQueryHandler.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\GetAccountQueryHandler.cs",
-              "RelativeToolTip": "Application\\Player\\Queries\\GetAccountQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "FindProfileByUsernameQuery.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\FindProfileByUsernameQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Queries\\FindProfileByUsernameQuery.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\FindProfileByUsernameQuery.cs",
+              "RelativeToolTip": "Application\\Player\\Queries\\FindProfileByUsernameQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T17:17:17.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FindAccountByIdQueryHandler.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\FindAccountByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Queries\\FindAccountByIdQueryHandler.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\FindAccountByIdQueryHandler.cs",
+              "RelativeToolTip": "Application\\Player\\Queries\\FindAccountByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T14:33:28.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetAccountQuery.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\GetAccountQuery.cs",
-              "RelativeDocumentMoniker": "Application\\Player\\Queries\\GetAccountQuery.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\GetAccountQuery.cs",
-              "RelativeToolTip": "Application\\Player\\Queries\\GetAccountQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAATAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "FindAccountByIdQuery.cs",
+              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\FindAccountByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Player\\Queries\\FindAccountByIdQuery.cs",
+              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Queries\\FindAccountByIdQuery.cs",
+              "RelativeToolTip": "Application\\Player\\Queries\\FindAccountByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T14:30:44.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 34,
               "Title": "ErrorHandlerMiddleware.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Middleware\\ErrorHandlerMiddleware.cs",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\Middleware\\ErrorHandlerMiddleware.cs",
@@ -764,33 +694,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
               "Title": "LoginCommandHandler.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\LoginCommandHandler.cs",
               "RelativeDocumentMoniker": "Application\\Player\\Commands\\LoginCommandHandler.cs",
               "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\LoginCommandHandler.cs",
               "RelativeToolTip": "Application\\Player\\Commands\\LoginCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T13:10:17.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "LoginCommand.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\LoginCommand.cs",
               "RelativeDocumentMoniker": "Application\\Player\\Commands\\LoginCommand.cs",
               "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Application\\Player\\Commands\\LoginCommand.cs",
               "RelativeToolTip": "Application\\Player\\Commands\\LoginCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-05T13:02:41.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "MessageHub.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Hubs\\MessageHub.cs",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\Hubs\\MessageHub.cs",
@@ -798,12 +728,11 @@
               "RelativeToolTip": "Putt Em Up Portal\\Hubs\\MessageHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:59:43.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T11:59:43.809Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "IMatchPerformanceRepository.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Infrastructure.Persistence\\Repositories\\Interfaces\\IMatchPerformanceRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure.Persistence\\Repositories\\Interfaces\\IMatchPerformanceRepository.cs",
@@ -811,25 +740,11 @@
               "RelativeToolTip": "Infrastructure.Persistence\\Repositories\\Interfaces\\IMatchPerformanceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T11:15:00.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T11:15:00.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Controllers\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\PlayerController.cs",
-              "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Controllers\\PlayerController.cs",
-              "RelativeToolTip": "Putt Em Up Portal\\Controllers\\PlayerController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAwwGAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T11:55:43.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "MatchPerformance.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Domain\\MatchPerformance.cs",
               "RelativeDocumentMoniker": "Domain\\MatchPerformance.cs",
@@ -837,21 +752,19 @@
               "RelativeToolTip": "Domain\\MatchPerformance.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T23:26:36.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T23:26:36.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 39,
               "Title": "MatchPerformanceController.cs",
               "DocumentMoniker": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Controllers\\MatchPerformanceController.cs",
               "RelativeDocumentMoniker": "Putt Em Up Portal\\Controllers\\MatchPerformanceController.cs",
               "ToolTip": "D:\\Aleksa\\Desktop\\Web Service\\putt-em-up-web-service\\Putt Em Up Portal\\Controllers\\MatchPerformanceController.cs",
               "RelativeToolTip": "Putt Em Up Portal\\Controllers\\MatchPerformanceController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:47:51.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T23:47:51.103Z"
             }
           ]
         }

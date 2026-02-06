@@ -10,9 +10,9 @@ namespace Application.DTOs
         public int FinalScore { get; set; }
        
 
-        public MatchPerformancePreview(Domain.MatchPerformance matchPerformance, Domain.Player player) {
+        public MatchPerformancePreview(Domain.MatchPerformance matchPerformance, Domain.Player player, byte[] playerAvatar) {
 
-            Player = new ProfilePreview(player);
+            Player = new ProfilePreview(player, playerAvatar);
 
             WonMatch = matchPerformance.WonMatch;
             FinalScore = matchPerformance.FinalScore;

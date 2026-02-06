@@ -12,11 +12,13 @@ namespace Application.Player.Commands
         public LoginCommandHandler(IUnitOfWork uow) { this.uow = uow; }
         public Task<LoginAnswer> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
-           Domain.Player? player =uow.PlayerRepository.Query().FirstOrDefault(
-                
-            (Domain.Player p) => p.Username == request.Username && p.Password == request.Password
-            
-            );
+            Domain.Player? player = uow.PlayerRepository.Query().FirstOrDefault(
+
+             (Domain.Player p) => p.Username == request.Username && p.Password == request.Password
+
+             && p.AccountDeleted == false
+
+             );
 
             return (player == null) ?
             Task.FromResult<LoginAnswer>(null) : Task.FromResult(new LoginAnswer(player));

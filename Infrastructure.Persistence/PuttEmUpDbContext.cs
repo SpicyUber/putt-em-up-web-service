@@ -22,8 +22,7 @@ namespace Infrastructure.Persistence
 
             modelBuilder.Entity<Player>().HasIndex((Player p) => p.Username).IsUnique();
 
-            modelBuilder.Entity<Player>().Property((Player p) => p.MatchmakingRanking)
-            .HasComputedColumnSql($"dbo.GetMMR([PlayerID])");
+            
 
 
             modelBuilder.Entity<MatchPerformance>().HasKey((MatchPerformance p) => new { p.PlayerID, p.MatchID });
@@ -49,7 +48,7 @@ namespace Infrastructure.Persistence
                     PlayerID = 1,
                     Username = "ila",
                     Password = "admin!",
-                    MatchmakingRanking = 0,
+                     
                     AccountDeleted = false,
                     DisplayName = "Aleksandar",
                     Description = "My Description.",
@@ -60,7 +59,7 @@ namespace Infrastructure.Persistence
                     PlayerID = 2,
                     Username = "magnus",
                     Password = "123456",
-                    MatchmakingRanking = 300,
+                     
                     AccountDeleted = false,
                     DisplayName = "Magnus",
                     Description = "I am very good at this game.",
@@ -71,7 +70,7 @@ namespace Infrastructure.Persistence
                     PlayerID = 3,
                     Username = "bob",
                     Password = "123abc",
-                    MatchmakingRanking = -300,
+                    
                     AccountDeleted = false,
                     DisplayName = "Bob",
                     Description = "I am very bad at this game.",

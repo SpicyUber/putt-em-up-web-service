@@ -9,7 +9,7 @@ namespace Domain
         
         public string Password { get; set; }
 
-        public int MatchmakingRanking { get; set; }
+        
 
         public bool AccountDeleted { get; set; }
 
