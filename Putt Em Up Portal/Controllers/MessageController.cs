@@ -1,9 +1,14 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Application.DTOs;
+using Application.Message.Commands;
+using Application.Message.Queries;
+using Domain;
+using Infrastructure.Persistence.UnitOfWork;
+using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Putt_Em_Up_Portal.Hubs;
-using Domain;
 using Putt_Em_Up_Portal.Testing;
-using Application.DTOs;
+using System.Threading.Tasks;
 
 namespace Putt_Em_Up_Portal.Controllers
 {
@@ -12,13 +17,18 @@ namespace Putt_Em_Up_Portal.Controllers
     public class MessageController : ControllerBase
     {
 
+        private readonly IMediator mediator;
 
-        
+        public MessageController(IMediator mediator)
+        {
+            this.mediator = mediator;
+        }
+
         [HttpGet]
         [Route("messages")]
-        public ActionResult<Message> Get([FromQuery]long fromPlayerID, [FromQuery]long toPlayerID, [FromQuery]DateTime sentTimestamp )
+        public async Task<ActionResult<Message>> Get([FromQuery]FindMessageQuery findMessageRequest )
         {
-           Message? message= LocalStorage<Message>.GetSampleList().FirstOrDefault((m) => { return m.FromPlayerID == fromPlayerID && m.SentTimestamp == sentTimestamp && m.ToPlayerID == toPlayerID; });
+            Message message = await mediator.Send(findMessageRequest);
             if (message == null) { return NotFound(); }
             
             return Ok(message);
@@ -26,9 +36,10 @@ namespace Putt_Em_Up_Portal.Controllers
 
         [HttpGet]
         [Route("chats")]
-        public ActionResult<List<Message>> GetChat([FromQuery] long firstPlayerID, [FromQuery] long secondPlayerID)
+        public async Task<ActionResult<List<Message>>> GetChat([FromQuery] GetChatQuery getChatRequest)
         {
-            List<Message> messages = LocalStorage<Message>.GetSampleList().Where<Message>((Message m) => { return (m.FromPlayerID == firstPlayerID && secondPlayerID == m.ToPlayerID || m.FromPlayerID == secondPlayerID && firstPlayerID == m.ToPlayerID); }).OrderBy((Message m1) => m1.SentTimestamp).ToList();
+            List<Message> messages = await mediator.Send(getChatRequest);
+
             if (messages.Count == 0) { return NotFound(); }
 
             return Ok(messages);
@@ -36,10 +47,10 @@ namespace Putt_Em_Up_Portal.Controllers
 
         [HttpGet]
         [Route("messages/recent")]
-        public ActionResult<List<Message>> GetAllChat([FromQuery] long playerID)
+        public async Task<ActionResult<List<Message>>> GetAllChat([FromQuery] GetAllRecentMessagesQuery getAllRecentMessagesRequest)
         {
-            List<Message> messages = LocalStorage<Message>.GetSampleList().Where<Message>((Message m) => { return (m.FromPlayerID == playerID || m.ToPlayerID == playerID )&& m.SentTimestamp.AddDays(7.0)>DateTime.Now; }).OrderByDescending((Message m1) => m1.SentTimestamp).ToList();
-            if (messages.Count == 0) { return NotFound(); }
+            List<Message> messages = await mediator.Send(getAllRecentMessagesRequest);
+               if (messages.Count == 0) { return NotFound(); }
 
             return Ok(messages);
         }
@@ -47,32 +58,30 @@ namespace Putt_Em_Up_Portal.Controllers
         [Route("messages")]
         [HttpDelete]
 
-      public ActionResult<Message> Delete(long fromPlayerID, long toPlayerID, DateTime sentTimestamp) {
-            List < Message > list = LocalStorage<Message>.GetSampleList().ToList();
-            int num = list.RemoveAll(m => { return m.FromPlayerID == fromPlayerID && m.SentTimestamp == sentTimestamp && m.ToPlayerID == toPlayerID; });
-            LocalStorage<Message>.SetSampleList(list);
-            if (num == 0) { return NotFound(); } else { 
-                  return NoContent(); }
+      public async Task<ActionResult> Delete(DeleteMessageCommand deleteMessageRequest) {
+
+            bool success = await mediator.Send(deleteMessageRequest);
+             
+            if (!success) { return NotFound(); }
+            
+            return NoContent(); 
         }
 
         [HttpPost]
         [Route("messages")]
-        public ActionResult<Message> Post([FromBody]MessagePostParams messageParams) {
-            Message message = new() { FromPlayerID = messageParams.FromPlayerID, ToPlayerID = messageParams.ToPlayerID, Content = "Message is being processed...", Reported = false, SentTimestamp = DateTime.Now };
-            LocalStorage<Message>.AddToSampleList(message);
-           
+        public async Task<ActionResult<Message>> Post([FromBody]CreateEmptyMessageCommand createMessageRequest) {
+            Message message = await mediator.Send(createMessageRequest);
+               
+           if(message == null) { return BadRequest("One of the IDs is not valid."); }
             return Ok(message); }
 
         [HttpPut]
         [Route("messages")]
-        public ActionResult<Message> Put(long fromPlayerID, long toPlayerID, DateTime sentTimestamp,[FromBody]MessageEditParams messageParams)
+        public async Task<ActionResult<Message>> Put(long fromPlayerID, long toPlayerID, DateTime sentTimestamp,[FromBody]MessageEditParams messageParams)
         {
 
-            Message? message = LocalStorage<Message>.GetSampleList().FirstOrDefault((m) => { return m.FromPlayerID == fromPlayerID && m.SentTimestamp == sentTimestamp && m.ToPlayerID == toPlayerID; });
-            if (message == null) { return NotFound(); }
-            if(messageParams.Content!=null) message.Content = messageParams.Content;
-            if (messageParams.Reported != null) message.Reported = (bool)messageParams.Reported;
-           
+            Message message = await mediator.Send(new EditMessageCommand() { FromPlayerID = fromPlayerID, ToPlayerID = toPlayerID, EditParams = messageParams });
+            if (message == null) { return NotFound("Message was not found. Possible invalid IDs and/or timestamp"); }
             return Ok(message);
 
 

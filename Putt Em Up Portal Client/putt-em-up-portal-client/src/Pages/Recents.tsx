@@ -120,7 +120,7 @@ if(m.toPlayerID==userContext.user.playerID){navigate("/chats/"+m.fromPlayerID);r
     <><PrimarySearchAppBar setSearchValue={setSearchValue}></PrimarySearchAppBar>
     <Toolbar></Toolbar>
      
-    <Box sx={{minWidth:"25vw", display: "flex", flexDirection: "column", bgcolor:"#287dd1ff" }}>
+    <Box sx={{height: "calc(100vh - 64px)",minWidth:"35vw", display: "flex", flexDirection: "column", bgcolor:"#287dd1ff" }}>
        <Typography  
    variant={"h4"}
   sx={{
@@ -130,7 +130,7 @@ if(m.toPlayerID==userContext.user.playerID){navigate("/chats/"+m.fromPlayerID);r
     textOverflow: 'clip',    
       justifyContent:'left',
     paddingTop:'12px'                
-  }}>{"MESSAGE HISTORY"}</Typography>
+  }}>{(messages.length>0)?"MESSAGE HISTORY":"NO RECENT MESSAGES"}</Typography>
       <Box sx={{ flex: 1, overflowY: "auto", p: 2 }}>
         <Stack spacing={1}>
           {messages.map((m:DetailedMessageView)=>{ return( <Button onClick={()=>GoToChat(m.message)} sx={{bgcolor:"rgb(37, 113, 189)"}}><Box     p={1} borderRadius={1}  >

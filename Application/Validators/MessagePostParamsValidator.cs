@@ -1,9 +1,10 @@
 ﻿using Application.DTOs;
+using Application.Message.Commands;
 using FluentValidation;
 
 namespace Application.Validators
 {
-    public class MessagePostParamsValidator : AbstractValidator<MessagePostParams>
+    public class MessagePostParamsValidator : AbstractValidator<CreateEmptyMessageCommand>
     {
         public MessagePostParamsValidator() {
 

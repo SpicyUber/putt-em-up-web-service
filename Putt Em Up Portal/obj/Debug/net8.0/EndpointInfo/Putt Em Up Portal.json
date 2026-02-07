@@ -245,7 +245,7 @@
         ],
         "parameters": [
           {
-            "name": "playerID",
+            "name": "PlayerID",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -253,7 +253,7 @@
             }
           },
           {
-            "name": "matchID",
+            "name": "MatchID",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -292,17 +292,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MatchPerformancePostParams"
+                "$ref": "#/components/schemas/CreateEmptyMatchPerformanceCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/MatchPerformancePostParams"
+                "$ref": "#/components/schemas/CreateEmptyMatchPerformanceCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/MatchPerformancePostParams"
+                "$ref": "#/components/schemas/CreateEmptyMatchPerformanceCommand"
               }
             }
           }
@@ -400,7 +400,7 @@
         ],
         "parameters": [
           {
-            "name": "playerID",
+            "name": "PlayerID",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -408,7 +408,7 @@
             }
           },
           {
-            "name": "matchID",
+            "name": "MatchID",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -430,27 +430,27 @@
         ],
         "parameters": [
           {
-            "name": "fromPlayerID",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          {
-            "name": "toPlayerID",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          {
-            "name": "sentTimestamp",
+            "name": "SentTimestamp",
             "in": "query",
             "schema": {
               "type": "string",
               "format": "date-time"
+            }
+          },
+          {
+            "name": "FromPlayerID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "ToPlayerID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
             }
           }
         ],
@@ -481,52 +481,28 @@
         "tags": [
           "Message"
         ],
-        "parameters": [
-          {
-            "name": "fromPlayerID",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          {
-            "name": "toPlayerID",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          {
-            "name": "sentTimestamp",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/Message"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Message"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Message"
-                }
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteMessageCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteMessageCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteMessageCommand"
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       },
@@ -538,17 +514,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MessagePostParams"
+                "$ref": "#/components/schemas/CreateEmptyMessageCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/MessagePostParams"
+                "$ref": "#/components/schemas/CreateEmptyMessageCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/MessagePostParams"
+                "$ref": "#/components/schemas/CreateEmptyMessageCommand"
               }
             }
           }
@@ -656,7 +632,7 @@
         ],
         "parameters": [
           {
-            "name": "firstPlayerID",
+            "name": "FirstPlayerID",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -664,7 +640,7 @@
             }
           },
           {
-            "name": "secondPlayerID",
+            "name": "SecondPlayerID",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -712,7 +688,7 @@
         ],
         "parameters": [
           {
-            "name": "playerID",
+            "name": "PlayerID",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -1141,6 +1117,52 @@
         },
         "additionalProperties": false
       },
+      "CreateEmptyMatchPerformanceCommand": {
+        "type": "object",
+        "properties": {
+          "playerID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "matchID": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateEmptyMessageCommand": {
+        "type": "object",
+        "properties": {
+          "fromPlayerID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "toPlayerID": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteMessageCommand": {
+        "type": "object",
+        "properties": {
+          "sentTimestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fromPlayerID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "toPlayerID": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
       "LeaderboardPage": {
         "type": "object",
         "properties": {
@@ -1249,20 +1271,6 @@
         },
         "additionalProperties": false
       },
-      "MatchPerformancePostParams": {
-        "type": "object",
-        "properties": {
-          "playerID": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "matchID": {
-            "type": "integer",
-            "format": "int64"
-          }
-        },
-        "additionalProperties": false
-      },
       "MatchPerformancePreview": {
         "type": "object",
         "properties": {
@@ -1352,20 +1360,6 @@
           "reported": {
             "type": "boolean",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "MessagePostParams": {
-        "type": "object",
-        "properties": {
-          "fromPlayerID": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "toPlayerID": {
-            "type": "integer",
-            "format": "int64"
           }
         },
         "additionalProperties": false

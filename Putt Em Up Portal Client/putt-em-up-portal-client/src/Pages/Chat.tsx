@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
+ 
 import {
   Box,
   Stack,
@@ -31,7 +32,8 @@ export default function Chat() {
     const [recipient, setRecipient]=useState<Profile>();
     const userContext : UserContextType = useContext(UserContext);
     const [connection, setConnection] = useState<signalR.HubConnection|null>(null);
-   const [searchValue, setSearchValue] = useState("");
+    const [searchValue, setSearchValue] = useState("");
+    
 
   useEffect(() => {
     const newConnection = new signalR.HubConnectionBuilder()
@@ -126,6 +128,26 @@ async function loadProfile(username:string){
    
      return undefined;
 }
+
+async function GoToProfile(pid:BigInt){
+      let url:string = `https://localhost:7120/api/accounts/${pid}`;
+        
+    try {
+     
+    const response : Response =  await fetch(url)
+
+ let p:Account = await response.json() as Account;
+   let account = p;
+ navigate(`/profiles/${account.username}`);
+    } catch (error) {
+
+     console.log(error);
+     console.log(url);
+    }
+     
+  
+ }
+
 function IsMine(m:Message):boolean{
 
 return (m.fromPlayerID==userContext.user.playerID);
@@ -139,8 +161,8 @@ function WhoSentIt(m:Message):Profile|undefined{
 
    await connection.invoke(
   "SendMessage",
-  me?.playerID.toString(),
-  recipient?.playerID.toString(),
+  me?.playerID,
+  recipient?.playerID,
   text
 );
 
@@ -161,29 +183,29 @@ function WhoSentIt(m:Message):Profile|undefined{
               sx={{ display: "flex", justifyContent: IsMine(m) ? "flex-end" : "flex-start" }}
             >
               {(IsMine(m))?<></> :(
-                <Avatar src={"data:image/png;base64, "+WhoSentIt(m)?.avatar} sx={{ mr: 2, alignSelf: "flex-start" }}>
+                <Avatar onClick={()=>GoToProfile((WhoSentIt(m) as Profile).playerID )} src={"data:image/png;base64, "+WhoSentIt(m)?.avatar} sx={{ mr: 2, alignSelf: "flex-start" }}>
                   
                 </Avatar>
                 
               )}
               
               <Paper
-  sx={{
-    p: 1.5,
-    maxWidth: "70%",
-    bgcolor: IsMine(m) ? "primary.main" : "warning.main",
-    color: IsMine(m) ? "primary.contrastText" : "text.primary",
-    display: "inline-block",
-    wordBreak: "break-word",
-  }}
->
+              sx={{
+              p: 1.5,
+              maxWidth: "70%",
+              bgcolor: IsMine(m) ? "primary.main" : "warning.main",
+              color: IsMine(m) ? "primary.contrastText" : "text.primary",
+              display: "inline-block",
+              wordBreak: "break-word",
+              }}
+            >
   <Typography variant="body2" sx={{ whiteSpace: "pre-wrap" }}>
     {m.content}
   </Typography>
 </Paper>
 
               {(!IsMine(m))?<></> :(
-                <Avatar src={"data:image/png;base64, "+WhoSentIt(m)?.avatar} sx={{ ml: 2, alignSelf: "flex-end" }}>
+                <Avatar onClick={()=>GoToProfile((WhoSentIt(m) as Profile).playerID )} src={"data:image/png;base64, "+WhoSentIt(m)?.avatar} sx={{ ml: 2, alignSelf: "flex-end" }}>
                   
                 </Avatar>
                 

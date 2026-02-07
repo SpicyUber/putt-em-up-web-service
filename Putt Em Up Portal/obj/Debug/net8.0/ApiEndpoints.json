@@ -81,12 +81,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "firstPlayerID",
+        "Name": "FirstPlayerID",
         "Type": "System.Int64",
         "IsRequired": false
       },
       {
-        "Name": "secondPlayerID",
+        "Name": "SecondPlayerID",
         "Type": "System.Int64",
         "IsRequired": false
       }
@@ -278,18 +278,18 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "fromPlayerID",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "toPlayerID",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "sentTimestamp",
+        "Name": "SentTimestamp",
         "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FromPlayerID",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "ToPlayerID",
+        "Type": "System.Int64",
         "IsRequired": false
       }
     ],
@@ -314,32 +314,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "fromPlayerID",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "toPlayerID",
-        "Type": "System.Int64",
-        "IsRequired": false
-      },
-      {
-        "Name": "sentTimestamp",
-        "Type": "System.DateTime",
-        "IsRequired": false
+        "Name": "deleteMessageRequest",
+        "Type": "Application.Message.Commands.DeleteMessageCommand",
+        "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Domain.Message",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Putt_Em_Up_Portal.Controllers.MessageController",
@@ -350,8 +330,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "messageParams",
-        "Type": "Application.DTOs.MessagePostParams",
+        "Name": "createMessageRequest",
+        "Type": "Application.Message.Commands.CreateEmptyMessageCommand",
         "IsRequired": true
       }
     ],
@@ -417,7 +397,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "playerID",
+        "Name": "PlayerID",
         "Type": "System.Int64",
         "IsRequired": false
       }
@@ -443,12 +423,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "playerID",
+        "Name": "PlayerID",
         "Type": "System.Int64",
         "IsRequired": false
       },
       {
-        "Name": "matchID",
+        "Name": "MatchID",
         "Type": "System.Int64",
         "IsRequired": false
       }
@@ -474,8 +454,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "mpParams",
-        "Type": "Application.DTOs.MatchPerformancePostParams",
+        "Name": "createMatchPerformanceParams",
+        "Type": "Application.MatchPerformance.Commands.CreateEmptyMatchPerformanceCommand",
         "IsRequired": true
       }
     ],
@@ -536,12 +516,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "playerID",
+        "Name": "PlayerID",
         "Type": "System.Int64",
         "IsRequired": false
       },
       {
-        "Name": "matchID",
+        "Name": "MatchID",
         "Type": "System.Int64",
         "IsRequired": false
       }

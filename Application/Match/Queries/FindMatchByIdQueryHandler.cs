@@ -33,12 +33,12 @@ namespace Application.Match.Queries
         {
 
 
-            IQueryable<MatchPerformance> matchPerformances = uow.MatchPerformanceRepository.Query()
+            IQueryable<Domain.MatchPerformance> matchPerformances = uow.MatchPerformanceRepository.Query()
                .Where(mp =>
 
                  (match.MatchID == mp.MatchID));
 
-          var listPerformancesWithPlayer = matchPerformances.Join(uow.PlayerRepository.Query(), (MatchPerformance mp) => mp.PlayerID, (Domain.Player p) => p.PlayerID,
+          var listPerformancesWithPlayer = matchPerformances.Join(uow.PlayerRepository.Query(), (Domain.MatchPerformance mp) => mp.PlayerID, (Domain.Player p) => p.PlayerID,
               (Domain.MatchPerformance mp,Domain.Player p) => new { matchPerformance = mp, player = p }).ToList();
 
 

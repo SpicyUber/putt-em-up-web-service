@@ -1,8 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Application.DTOs;
+using Application.MatchPerformance.Commands;
+using Application.MatchPerformance.Queries;
 using Domain;
+using MediatR;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Putt_Em_Up_Portal.Testing;
-using Application.DTOs;
+using System.Threading.Tasks;
 
 namespace Putt_Em_Up_Portal.Controllers
 {
@@ -10,32 +14,37 @@ namespace Putt_Em_Up_Portal.Controllers
     [ApiController]
     public class MatchPerformanceController : ControllerBase
     {
+        private readonly IMediator mediator;
+
+        public MatchPerformanceController(IMediator mediator)
+        {
+            this.mediator = mediator;
+        }
 
         [HttpGet]
-        public ActionResult<MatchPerformance> Get(long playerID, long matchID) {
+        public async Task<ActionResult<MatchPerformance>> Get([FromQuery] FindMatchPerformanceQuery findMatchPerformanceRequest) {
         
-        MatchPerformance? mp = LocalStorage<MatchPerformance>.GetSampleList().FirstOrDefault((mp) => mp.MatchID == matchID && mp.PlayerID==playerID);
+        MatchPerformance? mp = await mediator.Send(findMatchPerformanceRequest);
             if (mp != null) return Ok(mp); else return NotFound();
         }
 
         [HttpPost]
-        public ActionResult<MatchPerformance> Post([FromBody] MatchPerformancePostParams mpParams)
+        public async Task<ActionResult<MatchPerformance>> Post([FromBody] CreateEmptyMatchPerformanceCommand createMatchPerformanceParams)
         {
-            MatchPerformance mp = new() { MatchID=mpParams.MatchID, PlayerID=mpParams.PlayerID, FinalScore=0, MMRDelta=0, WonMatch=false};
-            LocalStorage<MatchPerformance>.AddToSampleList(mp);
-            return Ok(mp);
+           MatchPerformance matchPerformance = await mediator.Send(createMatchPerformanceParams);
+
+            if (matchPerformance != null) return Ok(matchPerformance);
+            return NotFound("Match/Player Id does not exist or match has reached matchPerformance quota.");
         }
 
         [HttpPut]
 
-        public ActionResult<MatchPerformance> Put(long playerID, long matchID,[FromBody] MatchPerformanceEditParams mpParams)
+        public async Task<ActionResult<MatchPerformance>> Put(long playerID, long matchID,[FromBody] MatchPerformanceEditParams mpParams)
         {
-            MatchPerformance? mp = LocalStorage<MatchPerformance>.GetSampleList().FirstOrDefault((mp) => mp.MatchID == matchID && mp.PlayerID == playerID);
-            if(mp==null) return NotFound();
+            MatchPerformance? mp = await mediator.Send(new EditMatchPerformanceCommand() { PlayerID=playerID,MatchID=matchID,EditParams=mpParams});
+            if(mp==null) return NotFound("Could not find matchPerformance.");
 
-            mp.MMRDelta = mpParams.MMRDelta;
-            mp.WonMatch = mpParams.WonMatch;
-            mp.FinalScore = mpParams.FinalScore;
+            
            
             return Ok(mp);
 
@@ -45,12 +54,10 @@ namespace Putt_Em_Up_Portal.Controllers
 
         [HttpDelete]
 
-        public ActionResult Delete(long playerID, long matchID)
+        public async Task<ActionResult> Delete([FromQuery] DeleteMatchPerformanceCommand deleteMatchPerformanceRequest)
         {
-            List<MatchPerformance> list = LocalStorage<MatchPerformance>.GetSampleList().ToList();
-            int num = list.RemoveAll(m => { return m.PlayerID == playerID && m.MatchID == matchID; });
-            LocalStorage<MatchPerformance>.SetSampleList(list);
-            if (num == 0) { return NotFound(); } else return NoContent();
+            bool success = await mediator.Send(deleteMatchPerformanceRequest);
+            if (!success) { return NotFound("MatchPerformance was not found."); } else return NoContent();
 
 
         }
