@@ -52,15 +52,16 @@ function LoginButtonHandler(){
       navigate("/leaderboard");
     }
     else{
-        
+         
         let data : LoginError = await response.json() as LoginError;
-         let err:string = "Username and/or Password are incorrect.";
+         let err:string = data.title+" ";
         
          for (const key in data.errors) {
     
-        err+=data.errors[key].join(", ")+". ";
+        err+=data.errors[key].join(", ");
         }
-
+        if(data.title==undefined)err=(isRegistering)?"Account with that username exists."
+        :"Incorrect username and/or password.";
         
         setError(err);
     }

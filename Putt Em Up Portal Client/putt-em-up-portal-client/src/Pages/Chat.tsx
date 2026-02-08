@@ -37,11 +37,11 @@ export default function Chat() {
 
   useEffect(() => {
     const newConnection = new signalR.HubConnectionBuilder()
-      .withUrl('https://localhost:7120/messageHub', {
+      .withUrl('https://localhost:7120/messageHub', { accessTokenFactory: () => {return userContext.user.token}
       })
       .withAutomaticReconnect()
       .build();
-
+      console.log("TOKEN"+userContext.user.token);
     setConnection(newConnection);
   }, []);
 
@@ -75,7 +75,11 @@ async function loadChat(){
              navigate("/login/")
 }
 const url:string = `https://localhost:7120/api/chats?firstPlayerID=${userContext.user.playerID}&secondPlayerID=${id}`;
-const response = await fetch(url);
+const response = await fetch(url,{
+      headers: {
+        "Authorization": `Bearer ${userContext.user.token}`,
+      },
+    });
 const result = await response.json() as Message[];
 if(response.ok){setMessages(result)};
 let a1 = await loadAccount(userContext.user.playerID);
@@ -95,7 +99,11 @@ if(a1!=undefined && a2!=undefined){
       
     try {
      
-    const response : Response =  await fetch(url)
+    const response : Response =  await fetch(url,{
+      headers: {
+        "Authorization": `Bearer ${userContext.user.token}`,
+      },
+    })
 
      let a:Account  = await response.json() as Account;
     return a;
@@ -114,7 +122,11 @@ async function loadProfile(username:string){
       
     try {
      
-    const response : Response =  await fetch(url)
+    const response : Response =  await fetch(url,{
+      headers: {
+        "Authorization": `Bearer ${userContext.user.token}`,
+      },
+    })
 
      let p:Profile  = await response.json() as Profile;
     return p;
@@ -134,7 +146,11 @@ async function GoToProfile(pid:BigInt){
         
     try {
      
-    const response : Response =  await fetch(url)
+    const response : Response =  await fetch(url,{
+      headers: {
+        "Authorization": `Bearer ${userContext.user.token}`,
+      },
+    })
 
  let p:Account = await response.json() as Account;
    let account = p;

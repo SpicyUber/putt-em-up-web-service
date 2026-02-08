@@ -200,3 +200,9 @@ D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug
 D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Config\appConfig.json
 D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Application.dll
 D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Application.pdb
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Aleksa\Desktop\Web Service\putt-em-up-web-service\Putt Em Up Portal\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

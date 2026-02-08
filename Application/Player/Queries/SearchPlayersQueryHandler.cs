@@ -36,7 +36,7 @@ namespace Application.Player.Queries
             var results = players
             .GroupJoin(
             validPerformances,
-            player => player.PlayerID,
+            player => player.Id,
             mp => mp.PlayerID,
             (player, matchPerformances) => new
             {

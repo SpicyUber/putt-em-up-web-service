@@ -13,7 +13,7 @@ namespace Application.Player.Queries
         {
            Domain.Player player = uow.PlayerRepository.GetById(request.Id);
             if (player == null || player.AccountDeleted) { return Task.FromResult<Account>(null); }
-            int matchmakingRanking = uow.PlayerRepository.GetTotalMatchmakingRanking(player.PlayerID);
+            int matchmakingRanking = uow.PlayerRepository.GetTotalMatchmakingRanking(player.Id);
             return Task.FromResult(new Account(player,matchmakingRanking));
         }
     }

@@ -1,12 +1,14 @@
 ﻿
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.SignalR;
+using Application.Message.Commands;
  
 using Domain;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Putt_Em_Up_Portal.Testing;
 using System.Diagnostics;
-using MediatR;
-using Application.Message.Commands;
+using System.Security.Claims;
 
 namespace Putt_Em_Up_Portal.Hubs
 {
@@ -14,10 +16,15 @@ namespace Putt_Em_Up_Portal.Hubs
     {
         private readonly IMediator mediator;
         public MessageHub(IMediator mediator) { this.mediator = mediator; }
+
+        [Authorize]
         public async Task SendMessage(long fromPlayerID, long toPlayerID, string content)
         {
 
-            
+            string tokenUserIdClaimString = Context.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            long tokenUserId = -1;
+            if(!long.TryParse(tokenUserIdClaimString,out tokenUserId) || tokenUserId!=fromPlayerID) return;
+
 
             Debug.WriteLine($"{fromPlayerID},{toPlayerID},{content}");
             Message newMessage = await mediator.Send(new CreateEmptyMessageCommand() { FromPlayerID = fromPlayerID, ToPlayerID = toPlayerID });

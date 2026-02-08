@@ -9,10 +9,14 @@ namespace Application.DTOs
         
         public string Token {get;set;}
 
-        public  LoginAnswer(Domain.Player p) { 
-        PlayerID= p.PlayerID;
-        Username = p.Username;    
-        
+        public bool IsAdmin {get;set;}
+
+        public  LoginAnswer(Domain.Player p, string token, bool isAdmin)
+        {
+            PlayerID = p.Id;
+            Username = p.UserName;
+            Token = token;
+            IsAdmin = isAdmin;
         }
 
 

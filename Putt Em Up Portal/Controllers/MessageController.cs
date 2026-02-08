@@ -4,6 +4,7 @@ using Application.Message.Queries;
 using Domain;
 using Infrastructure.Persistence.UnitOfWork;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Putt_Em_Up_Portal.Hubs;
@@ -56,6 +57,7 @@ namespace Putt_Em_Up_Portal.Controllers
         }
 
         [Route("messages")]
+        [Authorize(Roles = "admin")]
         [HttpDelete]
 
       public async Task<ActionResult> Delete(DeleteMessageCommand deleteMessageRequest) {
@@ -68,6 +70,7 @@ namespace Putt_Em_Up_Portal.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         [Route("messages")]
         public async Task<ActionResult<Message>> Post([FromBody]CreateEmptyMessageCommand createMessageRequest) {
             Message message = await mediator.Send(createMessageRequest);
@@ -76,6 +79,7 @@ namespace Putt_Em_Up_Portal.Controllers
             return Ok(message); }
 
         [HttpPut]
+        [Authorize(Roles = "admin")]
         [Route("messages")]
         public async Task<ActionResult<Message>> Put(long fromPlayerID, long toPlayerID, DateTime sentTimestamp,[FromBody]MessageEditParams messageParams)
         {

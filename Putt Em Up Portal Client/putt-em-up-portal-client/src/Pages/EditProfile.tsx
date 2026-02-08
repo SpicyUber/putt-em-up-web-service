@@ -49,6 +49,7 @@ export function EditProfile(props:AccountEditorProps) {
         "default.png", "screaming.png"
 
     ]
+
     const handleSubmit = async () => {
   const newProfile = {
     displayName:name,
@@ -61,7 +62,8 @@ console.log(JSON.stringify(newProfile));
     {
       method: "PUT",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${userContext.user.token}`
       },
       body: JSON.stringify(newProfile)
     }

@@ -113,7 +113,8 @@ export default function PrimarySearchAppBar(
       <MenuItem onClick={()=>{const newUser: LoginAnswer = {
     playerID: -1n,
     token: "",
-    username: ""
+    username: "",
+    isAdmin: false
   };userContext.updateUser(newUser); navigate(`/login`);}}>Logout</MenuItem></>}
     </Menu>
   );

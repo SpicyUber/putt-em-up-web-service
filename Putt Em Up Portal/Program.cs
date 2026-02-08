@@ -1,5 +1,6 @@
 
 using Application;
+using Application.Services;
 using Application.Validators;
 using Domain;
 using FluentValidation;
@@ -7,13 +8,18 @@ using FluentValidation.Resources;
 using Infrastructure.Persistence;
 using Infrastructure.Persistence.AvatarProvider;
 using Infrastructure.Persistence.UnitOfWork;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Putt_Em_Up_Portal.Hubs;
 using Putt_Em_Up_Portal.Middleware;
 using Putt_Em_Up_Portal.Testing;
 using SharpGrip.FluentValidation.AutoValidation;
 using SharpGrip.FluentValidation.AutoValidation.Mvc.Extensions;
+using System.Security.Claims;
+using System.Text;
 using System.Text.Json.Serialization;
 
 
@@ -27,23 +33,58 @@ namespace Putt_Em_Up_Portal
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Configuration.AddJsonFile("Config/appConfig.json", false);
 
             // Add services to the container.
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IAvatarProvider, AvatarProvider>();
+            builder.Services.AddScoped<IPasswordHasher<Domain.Player>, PasswordHasher<Domain.Player>>();
+            builder.Services.AddScoped<UserManager<Domain.Player>>();
             builder.Services.AddControllers().AddJsonOptions(opt => { opt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); });
             builder.Services.AddValidatorsFromAssemblyContaining<MatchSearchParamsValidator>();
             builder.Services.AddValidatorsFromAssemblyContaining<ProfileEditParamsValidator>();
             builder.Services.AddFluentValidationAutoValidation();
-            builder.Services.AddDbContext<PuttEmUpDbContext>(options => { options.UseSqlServer("Data Source=KABYLAKE;Initial Catalog=pep_db;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False"); });
+            builder.Services.AddIdentity<Player, IdentityRole<long>>(options => { options.Password.RequiredLength = 6; options.User.RequireUniqueEmail = false; options.SignIn.RequireConfirmedEmail = false; }).AddEntityFrameworkStores<PuttEmUpDbContext>();
+            builder.Services.AddDbContext<PuttEmUpDbContext>(options => { options.UseSqlServer(builder.Configuration.GetValue<string>("dbConString")); });
+            builder.Services.AddScoped<JwtService>();
+             
+            
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddSignalR();
-            builder.Configuration.AddJsonFile("Config/appConfig.json",false);
+            builder.Services.AddAuthentication(options => { options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme; options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme; })
+                .AddJwtBearer(options => {
+                    options.SaveToken = true; options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateAudience = true,ValidateIssuer=true,ValidateLifetime=false,ValidateIssuerSigningKey=true,ValidIssuer="PuttEmUpServer",ValidAudience="PuttEmUpClient",
+                        RoleClaimType = ClaimTypes.Role,
+                        NameClaimType = ClaimTypes.Name,
+                        IssuerSigningKey = new SymmetricSecurityKey(
+                     Encoding.UTF8.GetBytes(builder.Configuration["tokenSecret"])
+                )
+
+                    }; options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context =>
+                        {
+                            var accessToken = context.Request.Query["access_token"];
+
+                            var path = context.HttpContext.Request.Path;
+                            if (!string.IsNullOrEmpty(accessToken) &&
+                                path.StartsWithSegments("/messageHub"))
+                            {
+                                context.Token = accessToken;
+                            }
+
+                            return Task.CompletedTask;
+                        }
+                    };
+                }); 
             builder.Services.AddMediatR(cfg => { cfg.LicenseKey = builder.Configuration.GetValue<string>("mediatrKey"); cfg.RegisterServicesFromAssembly(typeof(Hook).Assembly); });
-            var app = builder.Build();
+             
+             var app = builder.Build();
 
          app.UseCors(config => { config.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod().AllowCredentials(); });
 
@@ -56,7 +97,9 @@ namespace Putt_Em_Up_Portal
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
+            
             app.UseMiddleware<ErrorHandlerMiddleware>();
 
             app.MapControllers();
@@ -77,9 +120,9 @@ namespace Putt_Em_Up_Portal
             matches.Add(new Match() { MatchID = 5, Cancelled = false, StartDate = new(2024, 12, 11, 12, 22, 33) });
             LocalStorage<Match>.SetSampleList(matches);
             List<Player> players = new();
-            players.Add(new() {PlayerID=0,Username="ila",Password="admin!",AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="" });
-            players.Add(new() { PlayerID = 1, Username = "magnus", Password = "123456", AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "magnus" });
-            players.Add(new() { PlayerID = 2, Username = "bob", Password = "123abc", AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "" });
+            players.Add(new() {Id=0,UserName="ila" ,AccountDeleted=false,DisplayName="Aleksandar",Description="My Description.",AvatarFilePath="" });
+            players.Add(new() { Id = 1, UserName = "magnus" , AccountDeleted = false, DisplayName = "Magnus", Description = "I am very good at this game.", AvatarFilePath = "magnus" });
+            players.Add(new() { Id = 2, UserName = "bob" , AccountDeleted = false, DisplayName = "Bob", Description = "I am very bad at this game.", AvatarFilePath = "" });
             LocalStorage<Player>.SetSampleList(players);
             List<MatchPerformance> mps = new();
             mps.Add(new() { PlayerID =0, MatchID=0, WonMatch=false, MMRDelta=-100, FinalScore=0 });

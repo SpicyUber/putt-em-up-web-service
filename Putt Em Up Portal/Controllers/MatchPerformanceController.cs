@@ -3,6 +3,7 @@ using Application.MatchPerformance.Commands;
 using Application.MatchPerformance.Queries;
 using Domain;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Putt_Em_Up_Portal.Testing;
@@ -12,6 +13,7 @@ namespace Putt_Em_Up_Portal.Controllers
 {
     [Route("api/performances")]
     [ApiController]
+    [Authorize(Roles = "admin")]
     public class MatchPerformanceController : ControllerBase
     {
         private readonly IMediator mediator;

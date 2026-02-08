@@ -1,6 +1,7 @@
 ﻿using Application.DTOs;
 using Infrastructure.Persistence.UnitOfWork;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,17 +13,20 @@ namespace Application.Player.Commands
     public class EditAccountCommandHandler : IRequestHandler<EditAccountCommand, Account>
     {
         private readonly IUnitOfWork uow;
+        private readonly IPasswordHasher<Domain.Player> hasher;
 
-        public EditAccountCommandHandler(IUnitOfWork uow) { this.uow = uow; }
+        public EditAccountCommandHandler(IUnitOfWork uow, IPasswordHasher<Domain.Player> hasher) { this.uow = uow; this.hasher = hasher; }
         public Task<Account> Handle(EditAccountCommand request, CancellationToken cancellationToken)
         {
             Domain.Player player = uow.PlayerRepository.GetById(request.Id);
             if (player == null || player.AccountDeleted || (request.AccountParams.Username!=null && uow.PlayerRepository.GetByUsername(request.AccountParams.Username)!=null))
             return Task.FromResult<Account>(null);
 
-            if (request.AccountParams.Username != null) player.Username = request.AccountParams.Username;
-            if (request.AccountParams.Password != null) player.Password = request.AccountParams.Password;
-            int matchmakingRanking = uow.MatchPerformanceRepository.Query().Where((mp) => mp.PlayerID == player.PlayerID).Sum(mp => mp.MMRDelta);
+            if (request.AccountParams.Username != null) player.UserName = request.AccountParams.Username;
+            if (request.AccountParams.Password != null) player.PasswordHash = hasher.HashPassword(player,request.AccountParams.Password);
+            
+            
+            int matchmakingRanking = uow.PlayerRepository.GetTotalMatchmakingRanking(request.Id);
             uow.PlayerRepository.Update(player);
             uow.SaveChanges();
             return Task.FromResult(new Account(player, matchmakingRanking));

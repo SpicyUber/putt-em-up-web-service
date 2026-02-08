@@ -1,13 +1,14 @@
 ﻿
 
-using Microsoft.AspNetCore.Mvc;
-using Domain;
-using Putt_Em_Up_Portal.Testing;
 using Application.DTOs;
-using MediatR;
-using Microsoft.AspNetCore.Identity.Data;
 using Application.Player.Commands;
 using Application.Player.Queries;
+using Domain;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.Data;
+using Microsoft.AspNetCore.Mvc;
+using Putt_Em_Up_Portal.Testing;
 using System.Threading.Tasks;
 
 namespace Putt_Em_Up_Portal.Controllers
@@ -47,6 +48,7 @@ namespace Putt_Em_Up_Portal.Controllers
         [HttpPut("profiles/{username}")]
         public async Task<ActionResult<Profile>> PutProfile(string username, [FromBody] ProfileEditParams profile)
         {
+            if(User?.Identity?.Name!=username.ToUpper())return Unauthorized();
 
             Profile p = await mediator.Send(new EditProfileCommand() { Profile = profile, Username = username });
 
@@ -88,7 +90,7 @@ namespace Putt_Em_Up_Portal.Controllers
         }
 
         [HttpDelete("accounts/{id}")]
-
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult> DeleteAccount(long id) {
 
            bool success =  await mediator.Send(new DeleteAccountCommand() { Id = id});

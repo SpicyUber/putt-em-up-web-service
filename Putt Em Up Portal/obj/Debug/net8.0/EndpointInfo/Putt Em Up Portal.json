@@ -1194,6 +1194,9 @@
           "token": {
             "type": "string",
             "nullable": true
+          },
+          "isAdmin": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -1297,6 +1300,9 @@
           "startDate": {
             "type": "string",
             "format": "date-time"
+          },
+          "cancelled": {
+            "type": "boolean"
           },
           "matchPerformances": {
             "type": "array",

@@ -10,8 +10,8 @@ namespace Application.DTOs
 
         public Account(Domain.Player p,int matchmakingRanking)
         {
-            PlayerID = p.PlayerID;
-            Username = p.Username;
+            PlayerID = p.Id;
+            Username = p.UserName;
             this.MatchmakingRanking = matchmakingRanking;
         }
         

@@ -98,11 +98,11 @@ namespace Application.Match.Queries
                 .Where((a) => a.matchPerformance2.PlayerID != playerId)
 
 
-                .Join(uow.PlayerRepository.Query(), (a) => a.matchPerformance1.PlayerID, (p1) => p1.PlayerID,
+                .Join(uow.PlayerRepository.Query(), (a) => a.matchPerformance1.PlayerID, (p1) => p1.Id,
 
                 (a, p1) => new { match = a.match, matchPerformance1 = a.matchPerformance1, matchPerformance2 = a.matchPerformance2, player1 = p1 })
 
-                .Join(uow.PlayerRepository.Query(), (a) => a.matchPerformance2.PlayerID, (p2) => p2.PlayerID,
+                .Join(uow.PlayerRepository.Query(), (a) => a.matchPerformance2.PlayerID, (p2) => p2.Id,
 
                 (a, p2) => new { match = a.match, matchPerformance1 = a.matchPerformance1, matchPerformance2 = a.matchPerformance2, player1 = a.player1, player2 = p2 }).OrderByDescending((a)=>a.match.StartDate);
 

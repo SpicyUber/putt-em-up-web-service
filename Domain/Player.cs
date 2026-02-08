@@ -1,13 +1,13 @@
-﻿ 
+﻿
+
+using Microsoft.AspNetCore.Identity;
 
 namespace Domain
 {
-    public class Player
+    public class Player : IdentityUser<long>
     {
-        public long PlayerID { get; set; }
-        public string Username { get; set; }
-        
-        public string Password { get; set; }
+         
+       
 
         
 

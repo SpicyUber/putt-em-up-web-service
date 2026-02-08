@@ -47,14 +47,23 @@ setRanking(account.matchmakingRanking);
         async function loadStats(){
 let url:string = `https://localhost:7120/api/matches?PlayerID=${profileDetails?.playerID}&StartDate=${new Date().toISOString()}&Mode=BeforeIncludingDate&PageSize=100&PageNumber=1`;
 console.log(url);
-const response : Response =  await fetch(url);
+const response : Response =  await fetch(url, {
+      headers: {
+        "Authorization": `Bearer ${userContext.user.token}`,
+      },
+    });;
 const json: MatchPerformancePage =await response.json() as MatchPerformancePage ;
 const matches:Match[] = json.matches;
-let counter:number=0;      
+let winCounter:number=0;
+let matchCounter:number=0;      
 for(let i=0;i<matches.length;i++){
-  if((matches[i].matchPerformances[0].wonMatch==true && matches[i].matchPerformances[0].player.playerID==profileDetails?.playerID ) || (matches[i].matchPerformances[1].wonMatch==true && matches[i].matchPerformances[1].player.playerID==profileDetails?.playerID ))counter++;
+  if(!matches[i].cancelled)
+    matchCounter++;
+
+  if(!matches[i].cancelled&&((matches[i].matchPerformances[0].wonMatch==true && matches[i].matchPerformances[0].player.playerID==profileDetails?.playerID ) || (matches[i].matchPerformances[1].wonMatch==true && matches[i].matchPerformances[1].player.playerID==profileDetails?.playerID )))
+    winCounter++;
  
-}console.log(counter);setWinRate(counter);setLastMatchesCount(matches.length);
+}console.log(winCounter);setWinRate(winCounter);setLastMatchesCount(matchCounter);
         }
     async function loadPlayer(){
           let url:string = `https://localhost:7120/api/profiles/${username}`;
@@ -80,7 +89,11 @@ for(let i=0;i<matches.length;i++){
         
     try {
      
-    const response : Response =  await fetch(url)
+    const response : Response =  await fetch(url, {
+      headers: {
+        "Authorization": `Bearer ${userContext.user.token}`,
+      },
+    });
 
     const json:MatchPerformancePage =  await response.json() as MatchPerformancePage
     setSearchResults(json.matches);
@@ -98,6 +111,25 @@ for(let i=0;i<matches.length;i++){
 setSortDescending(!sortDescending)
 
  }
+async function  editMatch(matchID:BigInt,currentCancelled:boolean){
+ let url:string = `https://localhost:7120/api/matches/${matchID}`;
+        
+    
+     
+    const response : Response =  await fetch(url, {body: `${!currentCancelled}`,
+      method : "PUT",
+      headers: {
+        "Authorization": `Bearer ${userContext.user.token}`,
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+    });
+    console.log(response);
+    if(response.ok){
+      await loadPlayer();
+      await loadStats();}
+}
+
  function calculatePaginationDisplayCount():number{
     let n: number = pageNumber;
     if(searchResults.length>0)
@@ -181,8 +213,31 @@ else return n;
     <Stack bgcolor={'rgba(197, 212, 233, 0)'} sx={{ ml: -1 }} spacing={2}>
     
     {searchResults.map(m => (
-      <MatchCard match={m} pid={profileDetails?.playerID as BigInt}  /> 
-   ))}
+  <Box
+       
+    sx={{
+  transition: 'transform 0.2s ease-in-out',
+  '&:hover': userContext.user.isAdmin ? {
+    transform: 'scale(1.05)',
+    cursor: 'pointer'
+  } : {}
+}}
+  >
+    {(userContext.user.isAdmin)?<Button sx={{ backgroundColor: 'transparent' }} onClick={async ()=>await editMatch(m.matchID,m.cancelled)}>
+    <MatchCard 
+      viewerIsAdmin={userContext.user.isAdmin} 
+       
+      match={m} 
+      pid={profileDetails?.playerID as BigInt}  
+    /> 
+    </Button>: <MatchCard 
+      viewerIsAdmin={userContext.user.isAdmin} 
+       
+      match={m} 
+      pid={profileDetails?.playerID as BigInt}  
+    /> }
+  </Box>
+))}
    <Pagination
     count={maxPages}
      

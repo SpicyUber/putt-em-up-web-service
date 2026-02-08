@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Domain;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 namespace Infrastructure.Persistence
 {
-    public class PuttEmUpDbContext : DbContext
+    public class PuttEmUpDbContext : IdentityDbContext<Player,IdentityRole<long>,long>
     {
         public DbSet<Player> Players {get;set;}
         public DbSet<Match> Matches { get;set;}
@@ -10,7 +12,8 @@ namespace Infrastructure.Persistence
 
         public DbSet<Message> Messages { get;set;}
 
-        public PuttEmUpDbContext(DbContextOptions options) : base(options) { }
+        private readonly IPasswordHasher<Player> hasher;
+        public PuttEmUpDbContext(DbContextOptions options, IPasswordHasher<Player> hasher) : base(options) { this.hasher = hasher; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
@@ -18,9 +21,10 @@ namespace Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Player>().HasKey((Player p) => p.PlayerID);
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Player>().HasKey((Player p) => p.Id);
 
-            modelBuilder.Entity<Player>().HasIndex((Player p) => p.Username).IsUnique();
+          //  modelBuilder.Entity<Player>().HasIndex((Player p) => p.Username).IsUnique();
 
             
 
@@ -40,45 +44,73 @@ namespace Infrastructure.Persistence
             modelBuilder.Entity<Message>().HasOne<Player>().WithMany().HasForeignKey((Message m) => m.ToPlayerID).OnDelete(DeleteBehavior.Restrict); ;
 
             modelBuilder.Entity<Message>().HasKey((Message m) => new {m.FromPlayerID , m.ToPlayerID, m.SentTimestamp });
+            modelBuilder.Entity<IdentityRole<long>>().HasData(new IdentityRole<long>() { Id = 1, Name = "user", NormalizedName = "USER" }, new IdentityRole<long>() {Id=2 , Name="admin", NormalizedName="ADMIN" });
+            Player p1 = new Player()
+            {
+                Id = 1,
+                UserName = "admin",
+                
 
-            
+
+                AccountDeleted = false,
+                DisplayName = "Aleksandar",
+                NormalizedUserName = "ADMIN",
+                Description = "My Description.",
+                AvatarFilePath = ""
+               
+            }; 
+            p1.PasswordHash = hasher.HashPassword(p1, "admin!");
+
+            Player p2 = new Player()
+            {
+                Id = 2,
+                UserName = "magnus",
+                NormalizedUserName = "MAGNUS",
+
+
+                AccountDeleted = false,
+                DisplayName = "Magnus",
+                Description = "I am very good at this game.",
+                AvatarFilePath = "magnus"
+            }; 
+            p2.PasswordHash = hasher.HashPassword(p2, "admin!");
+
+            Player p3 = new Player
+            {
+                Id = 3,
+                UserName = "bob",
+
+
+                AccountDeleted = false,
+                DisplayName = "Bob",
+                NormalizedUserName = "BOB",
+                Description = "I am very bad at this game.",
+                AvatarFilePath = ""
+            };
+             p3.PasswordHash = hasher.HashPassword(p3, "admin!");
             modelBuilder.Entity<Player>().HasData(
-                new Player
-                {
-                    PlayerID = 1,
-                    Username = "ila",
-                    Password = "admin!",
-                     
-                    AccountDeleted = false,
-                    DisplayName = "Aleksandar",
-                    Description = "My Description.",
-                    AvatarFilePath = ""
-                },
-                new Player
-                {
-                    PlayerID = 2,
-                    Username = "magnus",
-                    Password = "123456",
-                     
-                    AccountDeleted = false,
-                    DisplayName = "Magnus",
-                    Description = "I am very good at this game.",
-                    AvatarFilePath = "magnus"
-                },
-                new Player
-                {
-                    PlayerID = 3,
-                    Username = "bob",
-                    Password = "123abc",
-                    
-                    AccountDeleted = false,
-                    DisplayName = "Bob",
-                    Description = "I am very bad at this game.",
-                    AvatarFilePath = ""
-                }
+               p1,p2,p3
             );
 
-            
+            modelBuilder.Entity<IdentityUserRole<long>>().HasData(
+           new IdentityUserRole<long>
+           {
+               RoleId = 2,
+               UserId = 1
+           },
+            new IdentityUserRole<long>
+            {
+                RoleId = 1,
+                UserId = 2
+            },
+             new IdentityUserRole<long>
+             {
+                 RoleId = 1,
+                 UserId = 3
+             }
+       );
+
+
             modelBuilder.Entity<Match>().HasData(
                 
                 new Match { MatchID = 1, Cancelled = false, StartDate = new DateTime(2012, 3, 3, 13, 20, 20) },
@@ -115,7 +147,7 @@ namespace Infrastructure.Persistence
 
 
         }
-
+       
         
     }
 }

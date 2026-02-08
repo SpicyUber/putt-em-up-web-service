@@ -1,7 +1,8 @@
 
 import type { MatchPerformance } from "./MatchPerformance";
 export interface Match{
-  matchID: number;          
-  startDate: string;         
+  matchID: BigInt;          
+  startDate: string; 
+  cancelled: boolean;        
   matchPerformances: MatchPerformance[];
 };

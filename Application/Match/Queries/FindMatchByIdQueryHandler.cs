@@ -38,7 +38,7 @@ namespace Application.Match.Queries
 
                  (match.MatchID == mp.MatchID));
 
-          var listPerformancesWithPlayer = matchPerformances.Join(uow.PlayerRepository.Query(), (Domain.MatchPerformance mp) => mp.PlayerID, (Domain.Player p) => p.PlayerID,
+          var listPerformancesWithPlayer = matchPerformances.Join(uow.PlayerRepository.Query(), (Domain.MatchPerformance mp) => mp.PlayerID, (Domain.Player p) => p.Id,
               (Domain.MatchPerformance mp,Domain.Player p) => new { matchPerformance = mp, player = p }).ToList();
 
 

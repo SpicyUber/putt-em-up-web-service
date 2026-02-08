@@ -1,16 +1,20 @@
-﻿using FluentValidation;
-using Application.DTOs;
-using Application.Player.Commands;
+﻿using Application.Player.Commands;
+using FluentValidation;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Application.Validators
 {
     public class RegisterCommandValidator: AbstractValidator<RegisterCommand>
     {
-        public RegisterCommandValidator() {
+        public RegisterCommandValidator()
+        {
 
-            RuleFor(x => x.Username).NotEmpty().WithMessage("Username cannot be empty").Length(2,32).WithMessage("Username must be between 2 and 32 characters long");
-            RuleFor(x => x.Password).NotEmpty().WithMessage("Password cannot be empty").Length(6, 32).WithMessage("Password must be between 6 and 32 characters long");
-        
+            RuleFor((RegisterCommand x) => x.Password).MinimumLength(6).WithMessage("Password must be at least 6 characters long.");
+            RuleFor((RegisterCommand x) => x.Username).MinimumLength(3).WithMessage("Username must be at least 3 characters long.");
         }
     }
 }

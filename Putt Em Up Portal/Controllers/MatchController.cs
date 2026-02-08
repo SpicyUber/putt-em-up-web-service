@@ -1,14 +1,15 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Application.DTOs;
+using Application.Match.Commands;
+using Application.Match.Queries;
 using Domain;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Putt_Em_Up_Portal.Testing;
 using System.Dynamic;
 using System.Linq;
-using Application.DTOs;
 using System.Threading.Tasks;
-using MediatR;
-using Application.Match.Queries;
-using Application.Match.Commands;
 
 namespace Putt_Em_Up_Portal.Controllers
 {
@@ -22,21 +23,34 @@ namespace Putt_Em_Up_Portal.Controllers
         {
             this.mediator = mediator;
         }
+
         [HttpGet(Name = "Search")]
+        [Authorize]
         public async Task<ActionResult<MatchPreviewPage>> Search([FromQuery] SearchMatchesQuery searchParams)
         {
+            if (User.IsInRole("admin")) { var r = new SearchMatchesIncludingCancelledQuery() {
+                Mode = searchParams.Mode, PlayerID = searchParams.PlayerID, PageNumber = searchParams.PageNumber, PageSize = searchParams.PageSize, StartDate = searchParams.StartDate };
+                MatchPreviewPage matchPage = await mediator.Send(r);
+                return Ok(matchPage);
+            }
+            else { 
 
-            MatchPreviewPage matchPage = await mediator.Send(searchParams);
+                MatchPreviewPage matchPage = await mediator.Send(searchParams);
             return Ok(matchPage);
-          
+            }
+
+
         }
 
-     
 
+
+       
+         
 
 
 
         [HttpGet("{id}")]
+
 
         public async Task<ActionResult<MatchPreview>> Get(long id)
         {
@@ -49,7 +63,7 @@ namespace Putt_Em_Up_Portal.Controllers
         }
 
         [HttpPost()]
-
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<Match>> Post()
         {
             Match match =await mediator.Send(new CreateEmptyMatchCommand());
@@ -57,6 +71,7 @@ namespace Putt_Em_Up_Portal.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
 
         public async Task<ActionResult<Match>> Delete(long id) {
 
@@ -65,6 +80,7 @@ namespace Putt_Em_Up_Portal.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<Match>> Put(long id, [FromBody] bool cancelled)
         {
 

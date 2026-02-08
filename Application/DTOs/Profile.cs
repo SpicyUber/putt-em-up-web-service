@@ -6,7 +6,7 @@ namespace Application.DTOs
     {
 
         public Profile(Domain.Player p, byte[] avatar) {
-            PlayerID = p.PlayerID;
+            PlayerID = p.Id;
             DisplayName = p.DisplayName;
             Description = p.Description;
             if(avatar != null && avatar.Length>0)

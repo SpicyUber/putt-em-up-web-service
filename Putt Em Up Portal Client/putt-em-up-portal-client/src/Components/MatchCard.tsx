@@ -17,38 +17,202 @@ export default function MatchCard(props:MatchCardProps) {
   
 const { height, width } = useWindowDimensions();
 const navigate = useNavigate();
-async function GoToProfile(pid:BigInt){
-      let url:string = `https://localhost:7120/api/accounts/${pid}`;
-        
-    try {
-     
-    const response : Response =  await fetch(url)
-
- let p:Account = await response.json() as Account;
-   let account = p;
- navigate(`/profiles/${account.username}`);
-    } catch (error) {
-
-     console.log(error);
-     console.log(url);
-    }
-     
-  
- }
-function WonMatch(mp:MatchPerformance[],pid:BigInt){
-
-    if(mp==undefined || pid==undefined || mp.length<2)return true;
-    if(mp[0].wonMatch && mp[0].player.playerID == pid)return true;
-    if(mp[1].wonMatch && mp[1].player.playerID == pid)return true;
-    return false;
-}
-
-
-    return (
-
-    <Stack     sx={{  backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "#287dd1ff":"#FC440F"   }} direction={'row'} spacing={0}  >
+function CancelledCard(){return (
+    <Stack 
+        sx={{  
+            backgroundColor: "#e0e0e0",
+            opacity: 0.7,
+            position: 'relative'
+        }} 
+        direction={'row'} 
+        spacing={0}
+    >
        
-    <Card  variant={'outlined'} onClick={()=>GoToProfile(props.match.matchPerformances[0].player.playerID)}    sx={{zIndex:4, width:(width<500)?"80px" : "120px", height:(width<500)?"80px" : "120px", paddingBottom:(width<500)?"15px" :"0px", backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "rgb(38, 117, 197)":"#f65a3b"  }}>
+        <Card  
+            variant={'outlined'} 
+            onClick={(e)=>{e.stopPropagation();GoToProfile(props.match.matchPerformances[0].player.playerID)}}    
+            sx={{
+                zIndex: 4, 
+                width: (width<500) ? "80px" : "120px", 
+                height: (width<500) ? "80px" : "120px", 
+                paddingBottom: (width<500) ? "15px" : "0px", 
+                backgroundColor: "#f5f5f5",
+                border: '2px dashed #999',
+                backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,.03) 10px, rgba(0,0,0,.03) 20px)'
+            }}
+        >
+            <CardContent sx={{
+                paddingRight: (width<500) ? "0px" : "10px",
+                paddingLeft: (width<500) ? "7.5px" : "15px",
+                color: '#999'
+            }}>
+                <Avatar  
+                    variant='square'  
+                    sx={{ 
+                        width: (width<500) ? 65 : 90, 
+                        height: (width<500) ? 65 : 90,
+                        filter: 'grayscale(100%)',
+                        opacity: 0.5
+                    }} 
+                    alt={props.match.matchPerformances[0].player.displayName} 
+                    src={"data:image/png;base64, " + props.match.matchPerformances[0].player.avatar} 
+                />
+            </CardContent>
+        </Card>
+
+        <Box sx={{ 
+            flex: 1, 
+            px: 2, 
+            display: 'flex', 
+            flexDirection: 'column', 
+            justifyContent: 'center',
+            position: 'relative'
+        }}> 
+            <Box sx={{
+                width: (width<500) ? '15vw' : '30vw', 
+                flex: 1, 
+                px: 2, 
+                display: 'flex', 
+                flexDirection: 'row', 
+                justifyContent: 'center'
+            }}>
+                {(width<500) ? <></> : 
+                    <Typography 
+                        align='left'
+                        variant={(width<500) ? "body1" : "h6"}
+                        sx={{
+                            color: '#999',
+                            whiteSpace: 'nowrap',        
+                            overflow: 'hidden',          
+                            textOverflow: 'ellipsis',    
+                            width: '30vw',  
+                            paddingTop: '12px',
+                            textDecoration: 'line-through'
+                        }}
+                    >
+                        {props.match.matchPerformances[0].player.displayName}
+                    </Typography>
+                }
+                
+                <Typography 
+                    align='center'
+                    variant={(width<500) ? "caption" : "h6"}
+                    sx={{
+                        color: '#999',
+                        whiteSpace: 'wrap', 
+                        textWrapMode: (width<500) ? 'nowrap' : 'wrap',       
+                        overflow: (width<500) ? 'visible' : 'hidden',          
+                        textOverflow: 'ellipsis',    
+                        width: '30vw',  
+                        paddingLeft: (width<500) ? "15px" : "0",
+                        paddingTop: '12px',
+                        textDecoration: 'line-through'
+                    }}
+                >
+                    {(width<500) ? 
+                        ("    " + props.match.matchPerformances[0].player.displayName.slice(0,1) + ":-- vs " + props.match.matchPerformances[1].player.displayName.slice(0,1) + ":--") : 
+                        ("-- : --")
+                    } 
+                </Typography>
+                
+                {(width<500) ? <></> :  
+                    <Typography 
+                        align='right'
+                        variant={(width<500) ? "caption" : "h6"}
+                        sx={{
+                            color: '#999',
+                            whiteSpace: 'nowrap',        
+                            overflow: 'hidden',          
+                            textOverflow: 'ellipsis',    
+                            width: '30vw',   
+                            paddingTop: '12px',
+                            textDecoration: 'line-through'
+                        }}
+                    >
+                        {props.match.matchPerformances[1].player.displayName}
+                    </Typography>
+                }
+            </Box>
+            
+            {(width<500) ? 
+                <Box sx={{ flex: 1, px: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                    <Typography 
+                        align='center'
+                        variant="caption"
+                        sx={{
+                            color: '#d32f2f',
+                            whiteSpace: 'nowrap',
+                            fontSize: "12px",
+                            fontWeight: 600,
+                            overflow: 'hidden',          
+                            textOverflow: 'ellipsis',    
+                            paddingTop: '12px'                 
+                        }}
+                    >
+                        CANCELLED
+                    </Typography>
+                </Box> : 
+                <Box sx={{ width: '30vw', flex: 1, px: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                    <Typography 
+                        align='center'
+                        variant="h6"
+                        sx={{
+                            color: '#d32f2f',
+                            whiteSpace: 'nowrap',
+                            fontWeight: 600,
+                            overflow: 'hidden',          
+                            textOverflow: 'ellipsis',    
+                            width: '30vw',   
+                            paddingTop: '12px'                 
+                        }}
+                    >
+                        CANCELLED
+                    </Typography>
+                </Box>
+            }
+        </Box>
+        
+        <Divider sx={{ borderStyle: 'dashed', borderColor: '#999' }}/>   
+        
+        <Card  
+            variant={'outlined'}  
+            onClick={ (e)=>{e.stopPropagation();GoToProfile(props.match.matchPerformances[1].player.playerID)} }    
+            sx={{
+                zIndex: 4, 
+                width: (width<500) ? "80px" : "120px",
+                paddingBottom: (width<500) ? "15px" : "0px", 
+                height: (width<500) ? "80px" : "120px", 
+                backgroundColor: "#f5f5f5",
+                border: '2px dashed #999',
+                backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,.03) 10px, rgba(0,0,0,.03) 20px)'
+            }}
+        >
+            <CardContent sx={{
+                paddingRight: (width<500) ? "0px" : "10px",
+                paddingLeft: (width<500) ? "7.5px" : "15px", 
+                color: '#999'
+            }}>
+                <Avatar  
+                    variant='square'  
+                    sx={{ 
+                        width: (width<500) ? 65 : 90, 
+                        height: (width<500) ? 65 : 90,
+                        filter: 'grayscale(100%)',
+                        opacity: 0.5
+                    }} 
+                    alt={props.match.matchPerformances[1].player.displayName} 
+                    src={"data:image/png;base64, " + props.match.matchPerformances[1].player.avatar} 
+                />
+            </CardContent>
+        </Card>
+    </Stack>
+)}
+function NormalCard()
+{
+return(
+    <Stack      sx={{  backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "#287dd1ff":"#FC440F"   }} direction={'row'} spacing={0}  >
+       
+    <Card  variant={'outlined'} onClick={(e)=>{e.stopPropagation();GoToProfile(props.match.matchPerformances[0].player.playerID)}}    sx={{zIndex:4, width:(width<500)?"80px" : "120px", height:(width<500)?"80px" : "120px", paddingBottom:(width<500)?"15px" :"0px", backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "rgb(38, 117, 197)":"#f65a3b"  }}>
     
 <CardContent   sx={{paddingRight:(width<500)?"0px" :"10px",paddingLeft:(width<500)?"7.5px" :"15px" ,color: '#ffffff'}} >
      
@@ -142,7 +306,7 @@ function WonMatch(mp:MatchPerformance[],pid:BigInt){
   </Box>}
   </Box>
   <Divider/>   
- <Card  variant={'outlined'}  onClick={()=>{console.log("click"+props.match.matchPerformances[1].player.displayName);GoToProfile(props.match.matchPerformances[1].player.playerID)}}     sx={{zIndex:4, width:(width<500)?"80px" : "120px",paddingBottom:(width<500)?"15px" :"0px", height:(width<500)?"80px" : "120px", backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "rgb(38, 117, 197)":"#FC440F" }}>
+ <Card  variant={'outlined'}  onClick={(e)=>{e.stopPropagation();GoToProfile(props.match.matchPerformances[1].player.playerID)}}     sx={{zIndex:4, width:(width<500)?"80px" : "120px",paddingBottom:(width<500)?"15px" :"0px", height:(width<500)?"80px" : "120px", backgroundColor: WonMatch(props.match.matchPerformances,props.pid)? "rgb(38, 117, 197)":"#FC440F" }}>
 <CardContent  sx={{paddingRight:(width<500)?"0px" :"10px",paddingLeft:(width<500)?"7.5px" :"15px", color: '#ffffff'}} >
      
 
@@ -156,5 +320,37 @@ function WonMatch(mp:MatchPerformance[],pid:BigInt){
  
 
     </Card>
-    </Stack>);
+    </Stack>)
+
+}
+async function GoToProfile(pid:BigInt){
+      let url:string = `https://localhost:7120/api/accounts/${pid}`;
+        
+    try {
+     
+    const response : Response =  await fetch(url)
+
+ let p:Account = await response.json() as Account;
+   let account = p;
+ navigate(`/profiles/${account.username}`);
+    } catch (error) {
+
+     console.log(error);
+     console.log(url);
+    }
+     
+  
+ }
+function WonMatch(mp:MatchPerformance[],pid:BigInt){
+
+    if(mp==undefined || pid==undefined || mp.length<2)return true;
+    if(mp[0].wonMatch && mp[0].player.playerID == pid)return true;
+    if(mp[1].wonMatch && mp[1].player.playerID == pid)return true;
+    return false;
+}
+
+  if(!props.match.cancelled){
+    return NormalCard();}
+    else
+      return CancelledCard();
 }
